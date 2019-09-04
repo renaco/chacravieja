@@ -4,16 +4,27 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import logoBig from "./../images/logo-big.webp"
+import Legal from "./../components/legal"
+import styled from "styled-components"
+
+const ContentImage = styled.div`
+  margin-bottom: 1.45rem; 
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  img {
+    max-width: 225px;
+  }
+`
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem`, marginLeft: `auto`, marginRight: `auto` }}>
-      <img src={logoBig} />
-    </div>
+    <ContentImage>
+      <img src={logoBig} alt="Chacra Vieja" />
+    </ContentImage>
+    <Legal></Legal>
     <Link to="/contacto/">Contacto</Link>
   </Layout>
 )
