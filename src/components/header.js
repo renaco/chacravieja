@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import logoChacraVieja from "./../images/chacravieja.gif"
 import styled from "styled-components"
-import { Flex, Box } from '@rebass/grid'
+// import { Flex, Box } from '@rebass/grid'
 
 const Nav = styled.nav`
   display: flex;
@@ -15,13 +15,12 @@ const Nav = styled.nav`
 
 const HeaderBrowser = styled.header`
   display: flex;
-  background: black;
-  margin-bottom: 1.45rem;
 `
 
 const Header = ({ siteTitle }) => (
   <HeaderBrowser
     style={{
+      background: 'black'
     }}
   >
     <div
@@ -57,7 +56,7 @@ const Header = ({ siteTitle }) => (
         {/* <Link>Facebook</Link> */}
       </Nav>
     </div>
-    <Flex>
+    {/* <Flex>
       <Box
         sx={{
           display: 'grid',
@@ -65,7 +64,7 @@ const Header = ({ siteTitle }) => (
         }}
       >Flex asap</Box>
       <Box>Box</Box>
-    </Flex>
+    </Flex> */}
   </HeaderBrowser>
 )
 

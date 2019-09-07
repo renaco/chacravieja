@@ -24,15 +24,13 @@ const SecondPage = () => (
       <Flex mx={-2} mb={3}>
         <Box width={1 / 2} px={2}>
           <h1>ESCRÍBENOS</h1>
+          <a href="mailto:ventas@chacravieja.com">ventas@chacravieja.com</a>
           <p>
-            ESCRÍBENOS
-  Chacra Vieja Licores
-  Jr. Reyes Guerra N° 870
-  Barrio de Zaragoza, Moyobamba, Perú
-  <br/>
-  ventas@chacravieja.com 
-  <br/>
-  Telf:  942 428 028
+            Chacra Vieja Licores
+            Jr. Reyes Guerra N° 870
+            Barrio de Zaragoza, Moyobamba, Perú
+            <br />
+            Telf:  942 428 028
           </p>
         </Box>
         <Box width={1 / 2} px={2}>

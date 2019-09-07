@@ -5,17 +5,22 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import logoBig from "./../images/logo-big.webp"
 import Legal from "./../components/legal"
+import HomeItemComponent from "./../components/home"
 import styled from "styled-components"
 
 const ContentImage = styled.div`
-  margin-bottom: 1.45rem; 
+  display: block;
+  margin-bottom: 1.45rem;
   margin-left: auto;
   margin-right: auto;
-  display: block;
   text-align: center;
   img {
     max-width: 225px;
   }
+`
+
+const ContentItemComponent = styled.div`
+  display: flex;
 `
 
 const IndexPage = () => (
@@ -24,6 +29,12 @@ const IndexPage = () => (
     <ContentImage>
       <img src={logoBig} alt="Chacra Vieja" />
     </ContentImage>
+    <ContentItemComponent>
+      <HomeItemComponent></HomeItemComponent>
+      <HomeItemComponent></HomeItemComponent>
+      <HomeItemComponent></HomeItemComponent>
+      <HomeItemComponent></HomeItemComponent>
+    </ContentItemComponent>
     <Legal></Legal>
     <Link to="/contacto/">Contacto</Link>
   </Layout>
