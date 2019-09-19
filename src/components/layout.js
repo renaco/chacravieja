@@ -11,8 +11,9 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import styled from "styled-components"
-import fullBackground from "./../images/full-background.webp"
+import fullBackground from "./../images/background.webp"
 import "./layout.css"
+import "./customs.css"
 
 const BodyApp = styled.div`
   background: url(${fullBackground});
@@ -24,11 +25,11 @@ const BodyApp = styled.div`
     // }
 
 const Container = styled.div`
+  background: rgba(0, 0, 0, 0.5);
   margin: 0 auto;
   max-width: 960px;
-  padding: 0 1.0875rem 1.45rem;
   padding-top: 0;
-  background: rgba(0, 0, 0, 0.5);
+  padding: 0 1.0875rem 1.45rem;
 `
 
 const Layout = ({ children }) => {
@@ -43,7 +44,9 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <BodyApp>
+    <BodyApp
+      className="Home-container"
+    >
       <Header siteTitle={data.site.siteMetadata.title} />
       <Container>
         <main>{children}</main>

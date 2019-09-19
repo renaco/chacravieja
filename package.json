@@ -11,19 +11,23 @@
     "dotenv-flow": "^3.1.0",
     "gatsby": "^2.13.73",
     "gatsby-image": "^2.2.10",
+    "gatsby-mdx": "^0.6.2-ci.371",
     "gatsby-plugin-manifest": "^2.2.6",
     "gatsby-plugin-offline": "^2.2.7",
     "gatsby-plugin-react-helmet": "^3.1.4",
+    "gatsby-plugin-remote-images": "^1.0.7",
     "gatsby-plugin-sharp": "^2.2.13",
     "gatsby-plugin-styled-components": "^3.1.4",
-    "gatsby-source-filesystem": "^2.1.11",
+    "gatsby-source-filesystem": "^2.1.21",
+    "gatsby-transformer-json": "^2.2.7",
     "gatsby-transformer-sharp": "^2.2.7",
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-helmet": "^5.2.1",
     "rebass": "^4.0.5",
-    "styled-components": "^4.3.2"
+    "styled-components": "^4.3.2",
+    "styled-css-grid": "^1.2.1"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^5.1.11",
@@ -38,12 +42,20 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.14.3",
     "ftp-deploy": "^2.3.3",
+    "object-fit-images": "^3.2.4",
     "prettier": "^1.18.2"
   },
   "keywords": [
     "gatsby"
   ],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -53,12 +65,5 @@
     "serve": "gatsby serve",
     "storybook": "start-storybook -p 9000 -c .storybook",
     "build-storybook": "build-storybook -c .storybook -o storybook"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
   }
 }

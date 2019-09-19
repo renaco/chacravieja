@@ -46,9 +46,9 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link> */}
         <Link to="/">INICIO</Link>
+        <Link to="/historia">HISTORIA</Link>
+        {/* <Link to="/productos">PRODUCTOS</Link> */}
         {/* 
-        <Link>HISTORIA</Link>
-        <Link>PRODUCTOS</Link>
         <Link>GALERÍA</Link>
         <Link>TURISMO Y MÁS</Link>
       */}

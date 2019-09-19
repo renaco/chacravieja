@@ -11,12 +11,13 @@ const config = {
   remoteRoot: process.env.REMOTE_ROOT,
   include: [
     '*.html',
+    '*.js',
     'images/*',
     'public/*',
     'styles/*',
     'scripts/*'
   ],
-  deleteRemote: false,
+  deleteRemote: true,
   forcePasv: true
 }
 
