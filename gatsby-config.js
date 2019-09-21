@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `©Licores Regionales Chacra Vieja - Moyobamba, San Martìn, Perú`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Licores Regionales Chacra Vieja - Moyobamba, San Martìn, Perú. Alto Mayo, Uvachado, Rompe calzón, Siete raíces, bodega, machaska, chocolates, tabacos`,
     author: `@renaco`,
   },
   plugins: [

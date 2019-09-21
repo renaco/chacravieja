@@ -8,7 +8,7 @@ export const HomeItem = styled.div`
   margin-bottom: 20px;
   padding: 5px;
   text-align: center;
-  width: 25%;
+  width: 100%;
 `
 
 export const HomeItemTitle = styled.h5`
@@ -22,45 +22,3 @@ export const HomeItemTitle = styled.h5`
   padding: 5px 10px;
   background-color: ${CONFIG.bgTitleColor};
 `
-
-// export default () => {
-//   <StaticQuery
-//     query={graphql`
-//       query HomeItemsQuery {
-//         allHomeItemsQuery {
-//             edges {
-//               node {
-//                 title
-//                 content
-//               }
-//             }
-//           }
-//         }
-//       }
-//     `}
-//     render = {data => (
-//       <>
-//         <HomeItem>{getItemsHome(data)}</HomeItem>
-//       </>
-//     )}
-//   />
-// }
-
-// function getItemsHome(data) {
-//   const homeItemsArray = [];
-//   data.allHomeItemsJson.edges.forEach(item => 
-//     homeItemsArray.push(<HomeItemTitle>{ item.node.label }</HomeItemTitle>)
-//   )
-//   return homeItemsArray;
-// }
-
-// const HomeItemComponent = () => (
-//   <HomeItem>
-//     <HomeItemTitle>GALERÍA</HomeItemTitle>
-//     <img src="" alt=""/>
-//     <p>Disfruta tus licores regionales preferidos en nuestros nuestra licorería situada en Moyobamba, San Martín.</p>
-//     {/* <a>Leer más</a> */}
-//   </HomeItem>
-// )
-
-// export default HomeItemComponent

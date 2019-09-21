@@ -25,7 +25,7 @@ const BodyApp = styled.div`
     // }
 
 const Container = styled.div`
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.75);
   margin: 0 auto;
   max-width: 960px;
   padding-top: 0;

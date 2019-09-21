@@ -1,0 +1,34 @@
+{
+  "site": [
+    {
+      "slug": "home",
+      "title": "Home Chacra Vieja",
+      "paragraphs": [
+        {
+          "title": "Galería",
+          "image": "",
+          "content": "Disfruta tus licores regionales preferidos en nuestros nuestra licorería situada en Moyobamba, San Martín.",
+          "link": ""
+        },
+        {
+          "title": "Nuestros productos",
+          "image": "",
+          "content": "No importa que licor sea tu favorito, ¡En Chacra Vieja lo encontrarás!",
+          "link": ""
+        },
+        {
+          "title": "Nuestra historia",
+          "image": "",
+          "content": "Somos una organización líder en el mercado local, reconocida como una empresa competitiva y de proyección internacional.",
+          "link": ""
+        },
+        {
+          "title": "GUÍA TURÍSTICA MOYOBAMBA",
+          "image": "",
+          "content": "Encuentranos en el hermoso Valle del Alto Mayo, Moyobamba, La ciudad de las Orquídeas",
+          "link": ""
+        }
+      ]
+    }
+  ]
+}

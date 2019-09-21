@@ -47,10 +47,10 @@ const Header = ({ siteTitle }) => (
         </Link> */}
         <Link to="/">INICIO</Link>
         <Link to="/historia">HISTORIA</Link>
+        <Link to="/turismo-y-mas">TURISMO Y MÁS</Link>
         {/* <Link to="/productos">PRODUCTOS</Link> */}
         {/* 
         <Link>GALERÍA</Link>
-        <Link>TURISMO Y MÁS</Link>
       */}
         <Link to="/contacto">CONTACTO</Link>
         {/* <Link>Facebook</Link> */}

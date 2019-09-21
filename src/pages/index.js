@@ -11,6 +11,7 @@ import homeItemFour from "./../images/home-item-4.webp"
 import Legal from "./../components/legal"
 import { HomeItem, HomeItemTitle } from "./../components/home"
 import styled from "styled-components"
+import media from "styled-media-query"
 
 const ContentImage = styled.div`
   display: flex;
@@ -26,10 +27,12 @@ const HomeImage = styled.img`
 `
 
 const ContentItemComponent = styled.div`
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+  ${media.lessThan("medium")`
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  `}
 `
-// const { title, paragraphs } = props.pageContext;
-// console.log(props.pageContext)
 
 const IndexPage = () => (
   <Layout>
@@ -39,30 +42,29 @@ const IndexPage = () => (
     </ContentImage>
     <ContentItemComponent>
       {/* <HomeItemComponent></HomeItemComponent> */}
-      <React.Fragment>
-        <HomeItem>
-          <HomeItemTitle>GALERÍA</HomeItemTitle>
-          <img src={homeItemOne} alt="" />
-          <p>Disfruta tus licores regionales preferidos en nuestros nuestra licorería situada en Moyobamba, San Martín.</p>
-        </HomeItem>
-        <HomeItem>
-          <HomeItemTitle>NUESTROS PRODUCTOS</HomeItemTitle>
-          <img src={homeItemTwo} alt="" />
-          <p>No importa que licor sea tu favorito, ¡En Chacra Vieja lo encontrarás!</p>
-          {/* <Link to="/productos">Leer más</Link> */}
-        </HomeItem>
-        <HomeItem>
-          <HomeItemTitle>NUESTRA HISTORIA</HomeItemTitle>
-          <img src={homeItemThree} alt="" />
-          <p>Somos una organización líder en el mercado local, reconocida como una empresa competitiva y de proyección internacional.</p>
-          <Link to="/historia">Leer más</Link>
-        </HomeItem>
-        <HomeItem>
-          <HomeItemTitle>GUÍA TURÍSTICA MOYOBAMBA</HomeItemTitle>
-          <img src={homeItemFour} alt="" />
-          <p>Encuentranos en el hermoso Valle del Alto Mayo, Moyobamba, La ciudad de las Orquídeas</p>
-        </HomeItem>
-      </React.Fragment>
+      {/* <React.Fragment> */}
+      <HomeItem>
+        <HomeItemTitle>GALERÍA</HomeItemTitle>
+        <img src={homeItemOne} alt="" />
+        <p>Disfruta tus licores regionales preferidos en nuestros nuestra licorería situada en Moyobamba, San Martín.</p>
+      </HomeItem>
+      <HomeItem>
+        <HomeItemTitle>NUESTROS PRODUCTOS</HomeItemTitle>
+        <img src={homeItemTwo} alt="" />
+        <p>No importa que licor sea tu favorito, ¡En Chacra Vieja lo encontrarás!</p>
+      </HomeItem>
+      <HomeItem>
+        <HomeItemTitle>NUESTRA HISTORIA</HomeItemTitle>
+        <img src={homeItemThree} alt="" />
+        <p>Somos una organización líder en el mercado local, reconocida como una empresa competitiva y de proyección internacional.</p>
+        <Link to="/historia">Leer más</Link>
+      </HomeItem>
+      <HomeItem>
+        <HomeItemTitle>GUÍA TURÍSTICA MOYOBAMBA</HomeItemTitle>
+        <img src={homeItemFour} alt="" />
+        <p>Encuentranos en el hermoso Valle del Alto Mayo, Moyobamba, La ciudad de las Orquídeas</p>
+      </HomeItem>
+      {/* </React.Fragment> */}
     </ContentItemComponent>
     <Legal></Legal>
     <Link to="/contacto/">Contacto</Link>
