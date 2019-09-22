@@ -7,6 +7,8 @@ import {
 } from '@rebass/forms'
 
 import Layout from "../components/layout"
+import { MainTitle } from "./../components/title"
+
 import SEO from "../components/seo"
 import styled from "styled-components"
 import media from "styled-media-query"
@@ -28,7 +30,7 @@ const SecondPage = () => (
       method="post" action="https://formsubmit.co/chacravieja@gmail.com"
       py={3}>
       <div className="sm-col sm-col-12 lg-col-6">
-        <h1>Contáctenos</h1>
+        <MainTitle>ESCRÍBENOS</MainTitle>
         <p>
           Teléfono: 942 428 028 <br />
           Dirección: Jr. Reyes Guerra N° 870

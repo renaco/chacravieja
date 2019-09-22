@@ -17,13 +17,14 @@ const ContentImage = styled.div`
   display: flex;
   margin: 0 auto 1.45rem;
   text-align: center;
-  img {
-    max-width: 225px;
-  }
-`
-
-const HomeImage = styled.img`
+  `
+  
+  const HomeImage = styled.img`
   margin: 0 auto 3em;
+  max-width: 225px;
+  ${media.lessThan("medium")`
+    max-width: 90px;
+  `}
 `
 
 const ContentItemComponent = styled.div`
@@ -63,11 +64,12 @@ const IndexPage = () => (
         <HomeItemTitle>GUÍA TURÍSTICA MOYOBAMBA</HomeItemTitle>
         <img src={homeItemFour} alt="" />
         <p>Encuentranos en el hermoso Valle del Alto Mayo, Moyobamba, La ciudad de las Orquídeas</p>
+        <Link to="/turismo-y-mas">Leer más</Link>
       </HomeItem>
       {/* </React.Fragment> */}
     </ContentItemComponent>
     <Legal></Legal>
-    <Link to="/contacto/">Contacto</Link>
+    {/* <Link to="/contacto/">Contacto</Link> */}
   </Layout>
 )
 

@@ -12,6 +12,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import styled from "styled-components"
 import fullBackground from "./../images/background.webp"
+// import MainFooter from "./../components/footer"
 import "./layout.css"
 import "./customs.css"
 
@@ -21,7 +22,7 @@ const BodyApp = styled.div`
   `
     // * {
     //   background: rgba(0, 128, 0, 0.25);
-    //   border: 1px solid green;
+    //   border: 1px dotted green;
     // }
 
 const Container = styled.div`
@@ -54,6 +55,7 @@ const Layout = ({ children }) => {
           © {new Date().getFullYear()}, ©Licores Regionales Chacra Vieja - Moyobamba, San Martín, Perú
           {` `}
         </footer>
+        {/* <MainFooter></MainFooter> */}
       </Container>
     </BodyApp>
   )

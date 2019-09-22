@@ -2,6 +2,7 @@
 import styled from "styled-components"
 import { CONFIG } from "./../../constants/global"
 // import { StaticQuery, graphql } from "gatsby"
+import media from "styled-media-query"
 
 export const HomeItem = styled.div`
   background: black;
@@ -13,6 +14,7 @@ export const HomeItem = styled.div`
 
 export const HomeItemTitle = styled.h5`
   align-items: center;
+  background-color: ${CONFIG.golden};
   display: flex;
   font-family: 'Times';
   font-size: 0.9em;
@@ -20,5 +22,7 @@ export const HomeItemTitle = styled.h5`
   margin: 0 0 5px;
   min-height: 50px;
   padding: 5px 10px;
-  background-color: ${CONFIG.bgTitleColor};
+  ${media.lessThan("medium")`
+    font-size: 1.25em;
+  `}
 `

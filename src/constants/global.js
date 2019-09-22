@@ -1,5 +1,5 @@
 export const CONFIG = {
-  bgTitleColor: '#947c22'
+  golden: '#947c22'
 }
 
 const sizes = {
