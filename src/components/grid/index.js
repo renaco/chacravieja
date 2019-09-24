@@ -20,4 +20,7 @@ export const WrapContent = styled.div`
 export const WrapContentParagraph = styled.div`
   padding: 0 10px;
   margin-bottom: 20px;
+  ${media.lessThan("medium")`
+    padding: 0;
+  `}
 `

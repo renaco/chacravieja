@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import historyOne from "./../images/historia-chacravieja.webp"
 import cellar from "./../images/bodega-chacravieja.webp"
-import styled from "styled-components"
+// import styled from "styled-components"
 
 import { MainTitle } from "./../components/title"
 import { WrapContent, WrapContentParagraph } from "./../components/grid"
@@ -28,7 +28,6 @@ const HistoryPage = () => (
 
         <h3>VISIÓN</h3>
         <p>"Ser una empresa líder en nuestra región, con proyección al mundo, con crecimiento sostenido rentable a través de la innovación y orientación al mercado, comprometidos con nuestros colaboradores y la comunidad"</p>
-
       </WrapContentParagraph>
     </WrapContent>
   </Layout>

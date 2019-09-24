@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
-const MainButton = styled.button`
+const MainButton = styled.a`
   align-items: center;
   background-color: rgba(253, 247, 51, 1);
   background: yellow;
@@ -10,7 +10,8 @@ const MainButton = styled.button`
   display: flex;
   justify-content: center;
   margin: 0 auto 20px;
-  padding: 10px;
+  padding: 10px 20px;
+  text-decoration: none;
 `
 
 const MainButtonInner = styled.span`
@@ -21,10 +22,10 @@ const MainButtonInner = styled.span`
   position: relative;
   transition: color 0.4s ease 0s;
   white-space: nowrap;
-  `
+`
 
-export const MainButtonAction = () => (
-  <MainButton>
+export const MainButtonAction = (props) => (
+  <MainButton href={props.linkTo} target="_blank">
     <MainButtonInner>¿Más turismo? Clic aquí...</MainButtonInner>
   </MainButton>
 )

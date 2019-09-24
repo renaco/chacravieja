@@ -1,5 +1,4 @@
 import React from "react"
-// import styled from "styled-components"
 import { MainTitle } from "./../components/title"
 
 import Layout from "../components/layout"
@@ -41,7 +40,7 @@ const TourismPage = () => (
       <img src={embarcaderoPuertoTahuishco} alt="Embarcadero de Tahuishco" />
       <WrapContentParagraph>
         <h2>EMBARCADERO DE TAHUISHCO</h2>
-        <p>La punta de Tahuishco es un lugar muy concurrido en Moyobamba, desde donde se puede divisar el puerto del mismo nombre, y el sinuoso recorrido del río Mayo formando el Valle del Alto Mayo. Las "puntas" son miradores naturales que se encuentran alrededor de la ciudad de Moyobamba, la cual esta situada en una extensa meseta, es por eso que a esta ciudad también se la reconoce por sus diversos Barrancos.La punta de Tahuishco es la más conocida y concurrida, donde aparte de apreciar el paisaje se puede degustar de diversos platos típicos en los restaurantes que se encuentran en el lugar. Por las noches además se puede visitar discotecas como "Kovachi", muy concurrida por los Moyobambinos. En el puerto de Tahuishco puedes también realizar un paseo en botemotor por las aguas del caudaloso río Mayo.</p>
+        <p>La punta de Tahuishco es un lugar muy concurrido en Moyobamba, desde donde se puede divisar el puerto del mismo nombre, y el sinuoso recorrido del río Mayo formando el Valle del Alto Mayo. Las "puntas" son miradores naturales que se encuentran alrededor de la ciudad de Moyobamba, la cual esta situada en una extensa meseta, es por eso que a esta ciudad también se la reconoce por sus diversos Barrancos. La punta de Tahuishco es la más conocida y concurrida, donde aparte de apreciar el paisaje se puede degustar de diversos platos típicos en los restaurantes que se encuentran en el lugar. Por las noches además se puede visitar discotecas como "Kovachi", muy concurrida por los Moyobambinos. En el puerto de Tahuishco puedes también realizar un paseo en botemotor por las aguas del caudaloso río Mayo.</p>
       </WrapContentParagraph>
 
       <WrapContentParagraph>
@@ -62,8 +61,8 @@ const TourismPage = () => (
       </WrapContentParagraph>
       <img src={tingana} alt="La Tingana" />
 
+      <MainButtonAction linkTo="https://turismoi.pe/ciudades/provincia/moyobamba.htm"/>
     </WrapContent>
-    <MainButtonAction />
   </Layout>
 )
 
