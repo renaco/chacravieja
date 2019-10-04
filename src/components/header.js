@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import logoChacraVieja from "./../images/chacravieja.gif"
 import styled from "styled-components"
-import media from "styled-media-query"
+// import media from "styled-media-query"
 import { ResponsiveMenuComponent } from "./../components/menu"
 
 const HeaderBrowser = styled.header`

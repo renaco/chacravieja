@@ -29,8 +29,8 @@ const IconMenu = styled.svg`
   display: none;
   padding: 5px;
   position: fixed;
-  right: 5px;
-  top: 5px;
+  right: 0;
+  top: 0;
   ${media.lessThan("medium")`
     display: flex;
   `}
@@ -53,7 +53,7 @@ export const ResponsiveMenuComponent = (props) => {
       <MenuNav open={!isMobileNavFolder}>
         <Link to="/">INICIO</Link>
         <Link to="/historia">HISTORIA</Link>
-        {/* <Link to="/productos">PRODUCTOS</Link>  */}
+        <Link to="/productos">PRODUCTOS</Link> 
         <Link to="/turismo-y-mas">TURISMO Y MÁS</Link>
         {/* <Link>GALERÍA</Link> */}
         <Link to="/contacto">CONTACTO</Link>

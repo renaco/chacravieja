@@ -53,6 +53,7 @@ const IndexPage = () => (
         <HomeItemTitle>NUESTROS PRODUCTOS</HomeItemTitle>
         <img src={homeItemTwo} alt="" />
         <p>No importa que licor sea tu favorito, ¡En Chacra Vieja lo encontrarás!</p>
+        <Link to="/productos">Leer más</Link>
       </HomeItem>
       <HomeItem>
         <HomeItemTitle>NUESTRA HISTORIA</HomeItemTitle>

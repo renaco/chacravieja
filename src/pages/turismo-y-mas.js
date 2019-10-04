@@ -5,12 +5,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { WrapContent, WrapContentParagraph } from "./../components/grid"
 
-// import indanachado from "./../images/indanachado.webp"
-// import machaska from "./../images/machaska.webp"
-// import uvachado from "./../images/uvachado.webp"
-// import rompe from "./../images/rompe-calzon.webp"
-// import siete from "./../images/siete-raices.webp"
-
 import morro from "./../images/morro-de-calzada.webp"
 import banosTermales from "./../images/banos-termales.webp"
 import embarcaderoPuertoTahuishco from "./../images/embarcadero-puerto-de-tahuishco.webp"
