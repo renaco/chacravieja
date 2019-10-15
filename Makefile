@@ -17,12 +17,12 @@ clean:
 	rm -rf $(OBJ) $(EXEC)
 
 develop:
-	npm run develop
+	yarn run develop
 
 build:
 	rm -rf $(LOCAL_DIR)/ && \
 	rm -rf public/ && \
-	npm run build
+	yarn run build
 
 deploy:
 	mv public/ chacravieja.elrena.co && \

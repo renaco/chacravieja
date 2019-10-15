@@ -25,10 +25,9 @@ const Header = ({ siteTitle }) => (
     >
       <h1 style={{ margin: 0 }}>
         <Link to="/">
-          <img src={logoChacraVieja} alt="Logo Chacra Vieja" />
+          <img src={logoChacraVieja} alt="Chacra Vieja" title="Chacra Vieja" />
         </Link>
       </h1>
-
       <ResponsiveMenuComponent/>
     </div>
   </HeaderBrowser>

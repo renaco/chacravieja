@@ -13,8 +13,6 @@ import uvachado from "./../images/uvachado.png"
 import rompeCalzon from "./../images/rompe-calzon.png"
 import sieteRaices from "./../images/siete-raices.png"
 
-// const titleToUse = 'Productos'
-
 const ProductsPage = () => (
   <Layout>
     <SEO title="Productos" />
@@ -93,8 +91,6 @@ const ProductsPage = () => (
           Vol. Alcohólico :   40%  Vol.</p>
       </WrapContentParagraph>
 
-      {/*
-    */}
     </WrapContent>
   </Layout>
 )

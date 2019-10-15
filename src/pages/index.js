@@ -45,9 +45,11 @@ const IndexPage = () => (
       {/* <HomeItemComponent></HomeItemComponent> */}
       {/* <React.Fragment> */}
       <HomeItem>
+        <Link to="/galeria">
         <HomeItemTitle>GALERÍA</HomeItemTitle>
         <img src={homeItemOne} alt="" />
         <p>Disfruta tus licores regionales preferidos en nuestros nuestra licorería situada en Moyobamba, San Martín.</p>
+          Leer más</Link>
       </HomeItem>
       <HomeItem>
         <HomeItemTitle>NUESTROS PRODUCTOS</HomeItemTitle>
