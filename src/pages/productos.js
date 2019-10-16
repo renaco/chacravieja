@@ -6,12 +6,12 @@ import liquorsImages from "./../images/titulo-licores-de-la-selva.gif"
 import { WrapContent, WrapContentParagraph } from "./../components/grid"
 import { ImageProductContent } from "./../components/images"
 
-import indanachado from "./../images/indanachado.png"
-import chuchuhauasi from "./../images/chuchuhauasi.png"
-import machaska from "./../images/machaska.png"
-import uvachado from "./../images/uvachado.png"
-import rompeCalzon from "./../images/rompe-calzon.png"
-import sieteRaices from "./../images/siete-raices.png"
+import indanachado from "./../images/products/indanachado.png"
+import chuchuhauasi from "./../images/products/chuchuhauasi.png"
+import machaska from "./../images/products/machaska.png"
+import uvachado from "./../images/products/uvachado.png"
+import rompeCalzon from "./../images/products/rompe-calzon.png"
+import sieteRaices from "./../images/products/siete-raices.png"
 
 const ProductsPage = () => (
   <Layout>

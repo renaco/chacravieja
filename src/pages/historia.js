@@ -2,9 +2,8 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import historyOne from "./../images/historia-chacravieja.webp"
-import cellar from "./../images/bodega-chacravieja.webp"
-// import styled from "styled-components"
+import historyOne from "./../images/history/historia-chacravieja.jpg"
+import cellar from "./../images/history/bodega-chacravieja.jpg"
 
 import { MainTitle } from "./../components/title"
 import { WrapContent, WrapContentParagraph } from "./../components/grid"

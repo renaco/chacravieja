@@ -10,11 +10,19 @@ export const HomeItem = styled.div`
   padding: 5px;
   text-align: center;
   width: 100%;
+  a {
+    text-decoration: none;
+    display: block;
+  }
+  p {
+    color: white;
+  }
 `
 
 export const HomeItemTitle = styled.h5`
   align-items: center;
   background-color: ${CONFIG.golden};
+  color: white;
   display: flex;
   font-family: 'Times';
   font-size: 0.9em;
@@ -22,6 +30,7 @@ export const HomeItemTitle = styled.h5`
   margin: 0 0 5px;
   min-height: 50px;
   padding: 5px 10px;
+  text-decoration: none;
   ${media.lessThan("medium")`
     font-size: 1.25em;
   `}

@@ -12,10 +12,20 @@ const config = {
   include: [
     '*.html',
     '*.js',
+    '*.js.map',
+    '*.json',
+    'manifest.webmanifest',
+    'contacto/*',
+    'galeria/*',
+    'gracias/*',
+    'historia/*',
+    'icons/*',
+    'page-data/*',
     'images/*',
-    'public/*',
-    'styles/*',
-    'scripts/*'
+    'productos/*',
+    'static/*',
+    'turistmo-y-mas/*',
+    '404/'
   ],
   deleteRemote: true,
   forcePasv: true

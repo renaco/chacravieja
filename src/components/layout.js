@@ -11,7 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import styled from "styled-components"
-import fullBackground from "./../images/background.webp"
+import fullBackground from "./../images/background.png"
 // import MainFooter from "./../components/footer"
 
 import "./layout.css"

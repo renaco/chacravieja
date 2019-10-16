@@ -5,11 +5,11 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { WrapContent, WrapContentParagraph } from "./../components/grid"
 
-import morro from "./../images/morro-de-calzada.webp"
-import banosTermales from "./../images/banos-termales.webp"
-import embarcaderoPuertoTahuishco from "./../images/embarcadero-puerto-de-tahuishco.webp"
-import rioTioyacu from "./../images/rio-tioyacu.webp"
-import tingana from "./../images/tingana.webp"
+import morro from "./../images/tourism/morro-de-calzada.jpg"
+import banosTermales from "./../images/tourism/banos-termales.jpg"
+import embarcaderoPuertoTahuishco from "./../images/tourism/embarcadero-puerto-de-tahuishco.jpg"
+import rioTioyacu from "./../images/tourism/rio-tioyacu.jpg"
+import tingana from "./../images/tourism/tingana.jpg"
 
 import { MainButtonAction } from "./../components/buttons"
 
@@ -55,7 +55,7 @@ const TourismPage = () => (
       </WrapContentParagraph>
       <img src={tingana} alt="La Tingana" />
 
-      <MainButtonAction linkTo="https://turismoi.pe/ciudades/provincia/moyobamba.htm"/>
+      <MainButtonAction linkTo="https://turismoi.pe/ciudades/provincia/moyobamba.htm" />
     </WrapContent>
   </Layout>
 )

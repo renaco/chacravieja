@@ -12,6 +12,7 @@
     "gatsby": "^2.13.73",
     "gatsby-image": "^2.2.10",
     "gatsby-mdx": "^0.6.2-ci.371",
+    "gatsby-plugin-google-analytics": "^2.1.23",
     "gatsby-plugin-manifest": "^2.2.6",
     "gatsby-plugin-offline": "^2.2.7",
     "gatsby-plugin-react-helmet": "^3.1.4",
@@ -27,7 +28,8 @@
     "react-helmet": "^5.2.1",
     "styled-components": "^4.3.2",
     "styled-css-grid": "^1.2.1",
-    "styled-media-query": "^2.1.2"
+    "styled-media-query": "^2.1.2",
+    "wait-on": "^3.3.0"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^5.1.11",
@@ -36,6 +38,8 @@
     "@storybook/addons": "^5.1.11",
     "@storybook/react": "^5.1.11",
     "babel-plugin-styled-components": "^1.10.6",
+    "browser-sync": "^2.26.7",
+    "concurrently": "^5.0.0",
     "eslint": "^6.3.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-plugin-import": "^2.18.2",
@@ -44,6 +48,7 @@
     "ftp-deploy": "^2.3.3",
     "object-fit-images": "^3.2.4",
     "prettier": "^1.18.2",
+    "react-burger-menu": "^2.6.11",
     "react-icons": "^3.7.0"
   },
   "keywords": [
@@ -58,11 +63,12 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "scripts": {
-    "build": "gatsby build",
+    "build": "gatsby build --prefix-paths",
     "develop": "gatsby develop",
     "deploy": "node deploy",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "npm run develop",
+    "sync": "browser-sync start --proxy localhost:8000",
+    "start": "concurrently \"yarn run develop\" \"yarn run sync\"",
     "serve": "gatsby serve",
     "storybook": "start-storybook -p 9000 -c .storybook",
     "build-storybook": "build-storybook -c .storybook -o storybook"

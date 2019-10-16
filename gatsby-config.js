@@ -4,6 +4,7 @@ module.exports = {
     description: `Licores Regionales Chacra Vieja - Moyobamba, San Martìn, Perú. Alto Mayo, Uvachado, Rompe calzón, Siete raíces, bodega, machaska, chocolates, tabacos`,
     author: `@renaco`,
   },
+  pathPrefix: '/',
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
@@ -42,6 +43,18 @@ module.exports = {
       options: {
         nodeType: 'myNodes',
         imagePath: 'path.to.image'
+      }
+    },
+    `gatsby-plugin-google-analytics`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-15677461-35",
+        head: true,
+        exclude: ["/404.html"],
+        sampleRate: 5,
+        siteSpeedSampleRate: 10,
+        cookieDomain: "chacravieja.com"
       }
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality
