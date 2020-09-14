@@ -24,7 +24,7 @@ const config = {
     'images/*',
     'productos/*',
     'static/*',
-    'turistmo-y-mas/*',
+    'turismo-y-mas/*',
     '404/'
   ],
   deleteRemote: true,
