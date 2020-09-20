@@ -12,19 +12,19 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import styled from "styled-components"
 import fullBackground from "./../images/background.png"
-// import MainFooter from "./../components/footer"
 
 import "./layout.css"
 import "./customs.css"
+
+const Footer = styled.footer`
+  margin-top: 10px;
+  display: block;
+`
 
 const BodyApp = styled.div`
   background: url(${fullBackground});
   min-height: 100vh;
   `
-// * {
-//   background: rgba(0, 128, 0, 0.25);
-//   border: 1px dotted green;
-// }
 
 const Container = styled.div`
   background: rgba(0, 0, 0, 0.75);
@@ -58,13 +58,12 @@ const Layout = ({ children }) => {
       className="Home-container"
     >
       <Header siteTitle={data.site.siteMetadata.title} />
-      {/* <ResponsiveMenuComponent/> */}
       <Container>
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, ©Licores Regionales <PreFooter>Chacra Vieja</PreFooter> - Moyobamba, San Martín, Perú
+        <Footer>
+          © {new Date().getFullYear()}, ©Licores Regionales <PreFooter>Chacra Vieja</PreFooter> - Moyobamba, San Martín, Perú.
           {` `}
-        </footer>
+        </Footer>
       </Container>
     </BodyApp>
   )

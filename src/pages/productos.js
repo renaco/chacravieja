@@ -22,7 +22,7 @@ const ProductsPage = () => (
       <ImageProductContent src={chuchuhauasi} alt="Chuchuhuasi" />
       <WrapContentParagraph>
         <h2>Chuchuhuasi</h2>
-        <p>Licor de chuchuhuasi, chuchuwasi o chuchuwasha, macerado de la corteza del árbol amazónico de chuchuhuasi en aguardiente de caña, su aroma y sabor amaderado delatan su origen de selva alta, entre algunas de sus propiedades y bondades son: antioxidante, antiviral, astringente para problemas digestivos entre otros. Sobre sus propiedades levanta un halo de misticismo y tradición curativa con siglos de antigüedad y es un elixir.</p>
+        <p>Licor de Chuchuhuasi, Chuchuwasi o Chuchuwasha, macerado de la corteza del árbol amazónico de Chuchuhuasi en aguardiente de caña, su aroma y sabor amaderado delatan su origen de selva alta, entre algunas de sus propiedades y bondades son: antioxidante, antiviral, astringente para problemas digestivos entre otros. Sobre sus propiedades levanta un halo de misticismo y tradición curativa con siglos de antigüedad y es un elixir.</p>
         <p>Se adecua a nuestro consumo y en especial para la preparación de tragos directos, batidos, sours.  Puede utilizarse también como maridaje para la repostería y cocina.</p>
         <p><strong>Detalles</strong>
           <br />
@@ -33,7 +33,7 @@ const ProductsPage = () => (
       <ImageProductContent src={uvachado} alt="Uvachado" />
       <WrapContentParagraph>
         <h2>Uvachado</h2>
-        <p>Nuestro licor de uvachado bebida exótica de nuestra selva peruana, se trata  de un macerado de la uva isabela en aguardiente de caña, se caracteriza por ser una bebida  bandera de nuestra región amazónica. En su clase, es la bebida de mayor consumo, su delicadeza dulzura realza los aromas naturales  de nuestra selva. Este emblemático licor  de agradable sabor , es especial como aperitivo, pudiendo servirse solo, ligeramente helado o a las rocas, además puede utilizarse como  maridaje en la repostería y cocina</p>
+        <p>Nuestro licor de Uvachado bebida exótica de nuestra selva peruana, se trata  de un macerado de la uva isabela en aguardiente de caña, se caracteriza por ser una bebida  bandera de nuestra región amazónica. En su clase, es la bebida de mayor consumo, su delicadeza dulzura realza los aromas naturales  de nuestra selva. Este emblemático licor  de agradable sabor , es especial como aperitivo, pudiendo servirse solo, ligeramente helado o a las rocas, además puede utilizarse como  maridaje en la repostería y cocina</p>
         <p><strong>Detalles</strong>
           <br />
           Presentación     :  750ml / 500ml
@@ -82,7 +82,7 @@ const ProductsPage = () => (
       <ImageProductContent src={machaska} alt="Machaska" />
       <WrapContentParagraph>
         <h2>Machaska</h2>
-        <p>Licor obtenido de la destilación de los jugos y melados de la caña de azúcar previamente fermentados, elaborado con esencias naturales y tratada de la mejor manera, todos estos insumos mezclados conjugan el sabor inigualable del machaska (aguardiente de caña) chacra vieja.</p>
+        <p>Licor obtenido de la destilación de los jugos y melados de la caña de azúcar previamente fermentados, elaborado con esencias naturales y tratada de la mejor manera, todos estos insumos mezclados conjugan el sabor inigualable del machaska (aguardiente de caña) Chacra Vieja.</p>
         <p>Por su gran sabor quien encuentra en nuestro producto, ligero, suave, limpio, sin sabor, sin color, sin olor  y comenta que chacra vieja machaska  esta hecho para brindar, deleite del paladar, como también se adecua a la preparación de tragos directos, batidos y sours, pudiendo también utilizarse como maridaje en la repostería y cocina.</p>
         <p><strong>Detalles</strong>
           <br />

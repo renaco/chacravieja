@@ -12,12 +12,13 @@ import Legal from "./../components/legal"
 import { HomeItem, HomeItemTitle } from "./../components/home"
 import styled from "styled-components"
 import media from "styled-media-query"
+import DownloadFile from "./../components/download"
 
 const ContentImage = styled.div`
   display: flex;
   margin: 0 auto 1.45rem;
   text-align: center;
-  `
+`
 
 const HomeImage = styled.img`
   margin: 0 auto 3em;
@@ -41,8 +42,8 @@ const IndexPage = () => (
     <ContentImage>
       <HomeImage src={logoBig} alt="Chacra Vieja" />
     </ContentImage>
+    <DownloadFile/>
     <ContentItemComponent>
-      {/* <HomeItemComponent></HomeItemComponent> */}
       <React.Fragment>
         <HomeItem>
           <Link to="/galeria">
@@ -69,12 +70,12 @@ const IndexPage = () => (
           <Link to="/turismo-y-mas">
             <HomeItemTitle>GUÍA TURÍSTICA MOYOBAMBA</HomeItemTitle>
             <img src={homeItemFour} alt="" />
-            <p>Encuentranos en el hermoso Valle del Alto Mayo, Moyobamba, La ciudad de las Orquídeas</p>
+            <p>Encuentranos en el hermoso Valle del Alto Mayo, Moyobamba, la ciudad de las Orquídeas.</p>
             Leer más</Link>
         </HomeItem>
       </React.Fragment>
     </ContentItemComponent>
-    <Legal></Legal>
+    <Legal/>
     {/* <Link to="/contacto/">Contacto</Link> */}
   </Layout>
 )

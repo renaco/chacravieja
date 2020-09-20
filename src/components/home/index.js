@@ -1,7 +1,5 @@
-// import React from "react"
 import styled from "styled-components"
 import { CONFIG } from "./../../constants/global"
-// import { StaticQuery, graphql } from "gatsby"
 import media from "styled-media-query"
 
 export const HomeItem = styled.div`

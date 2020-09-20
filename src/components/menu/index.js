@@ -1,7 +1,6 @@
 import React, { PureComponent } from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
-// import media from "styled-media-query"
 import { FaFacebookF, FaYoutube, FaInstagram, FaWhatsapp } from "react-icons/fa"
 import { slide as Menu } from "react-burger-menu"
 
@@ -26,7 +25,7 @@ var MenuNavStyles = {
   },
   bmMenu: {
     background: '#000000',
-    padding: '2.5em 1.5em 0',
+    padding: '0',
     fontSize: '1.15em'
   },
   bmMorphShape: {
@@ -51,24 +50,6 @@ var MenuNavStyles = {
     background: 'rgba(0, 0, 0, 0.3)'
   }
 }
-// const MenuNav = styled.nav`
-//   a {
-//     margin: 10px;
-//     color: '#DDC000';
-//     text-decoration: none;
-//     ${media.lessThan("medium")`
-//       margin: 20px;
-//     `}
-//   }
-//   ${media.lessThan("medium")`
-//     display: none;
-//     flex-direction: column;
-//     position: fixed;
-//     text-align: center;
-//     width: 100%;
-//     z-index: 10;
-//   `}
-// `
 
 const ResponsiveMenu = styled.div`
   display: flex;
@@ -113,8 +94,6 @@ export class ResponsiveMenuComponent extends PureComponent {
           right
           customBurgerIcon={
             <svg
-              // width="50"
-              // height="50"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
             >

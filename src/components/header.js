@@ -13,7 +13,7 @@ const HeaderBrowser = styled.header`
 const Header = ({ siteTitle }) => (
   <HeaderBrowser
     style={{
-      background: 'black'
+      background: '#060606'
     }}
   >
     <div

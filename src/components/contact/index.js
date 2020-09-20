@@ -19,4 +19,4 @@ const ContactComponent = () => (
   </TitleContacts>
 )
 
-export default ContactComponent
+export default ContactComponent;

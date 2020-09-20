@@ -48,7 +48,7 @@
     "ftp-deploy": "^2.3.3",
     "object-fit-images": "^3.2.4",
     "prettier": "^1.18.2",
-    "react-burger-menu": "^2.6.11",
+    "react-burger-menu": "^2.0.0",
     "react-icons": "^3.7.0"
   },
   "keywords": [
