@@ -22,9 +22,11 @@ const ContentImage = styled.div`
 
 const HomeImage = styled.img`
   margin: 0 auto 3em;
-  max-width: 225px;
+  max-width: 140px;
+  height: 312px;
   ${media.lessThan("medium")`
-    max-width: 90px;
+    max-width: 175px;
+    height: 390px;
   `}
 `
 

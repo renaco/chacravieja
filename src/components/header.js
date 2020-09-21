@@ -8,6 +8,12 @@ import { ResponsiveMenuComponent } from "./../components/menu"
 
 const HeaderBrowser = styled.header`
   display: flex;
+  img {
+    margin-bottom: 0;
+  }
+  a {
+    display: block;
+  }
 `
 
 const Header = ({ siteTitle }) => (

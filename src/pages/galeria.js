@@ -25,16 +25,12 @@ import galleryFifteen from "./../images/gallery/galeria-15.jpg"
 import gallerySixteen from "./../images/gallery/galeria-16.jpg"
 
 const GalleryContent = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-gap: 20px;
   img {
-    width: 30%;
     margin: 5px;
-    ${media.lessThan("medium")`
-      width: 45%;
-      margin: 5px
-    `}
   }
 `
 

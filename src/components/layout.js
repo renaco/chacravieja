@@ -61,7 +61,7 @@ const Layout = ({ children }) => {
       <Container>
         <main>{children}</main>
         <Footer>
-          © {new Date().getFullYear()}, ©Licores Regionales <PreFooter>Chacra Vieja</PreFooter> - Moyobamba, San Martín, Perú.
+          © {new Date().getFullYear()} Todos los derechos reservados | Licores Regionales <PreFooter>Chacra Vieja</PreFooter> - Moyobamba, San Martín, Perú.
           {` `}
         </Footer>
       </Container>
