@@ -7,8 +7,6 @@
   "dependencies": {
     "@rebass/forms": "^4.0.5",
     "@rebass/grid": "^6.1.0",
-    "dotenv": "^8.1.0",
-    "dotenv-flow": "^3.1.0",
     "gatsby": "^2.13.73",
     "gatsby-image": "^2.2.10",
     "gatsby-mdx": "^0.6.2-ci.371",
@@ -40,6 +38,8 @@
     "babel-plugin-styled-components": "^1.10.6",
     "browser-sync": "^2.26.7",
     "concurrently": "^5.0.0",
+    "dotenv": "^8.1.0",
+    "dotenv-flow": "^3.1.0",
     "eslint": "^6.3.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-plugin-import": "^2.18.2",
