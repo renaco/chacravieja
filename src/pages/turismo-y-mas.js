@@ -8,7 +8,6 @@ import { WrapContent, WrapContentParagraph } from "./../components/grid"
 import morro from "./../images/tourism/morro-de-calzada.jpg"
 import banosTermales from "./../images/tourism/banos-termales.jpg"
 import embarcaderoPuertoTahuishco from "./../images/tourism/embarcadero-puerto-de-tahuishco.jpg"
-import rioTioyacu from "./../images/tourism/rio-tioyacu.jpg"
 import tingana from "./../images/tourism/tingana.jpg"
 
 import { MainButtonAction } from "./../components/buttons"
@@ -36,12 +35,6 @@ const TourismPage = () => (
         <h2>EMBARCADERO DE TAHUISHCO</h2>
         <p>La punta de Tahuishco es un lugar muy concurrido en Moyobamba, desde donde se puede divisar el puerto del mismo nombre, y el sinuoso recorrido del río Mayo formando el Valle del Alto Mayo. Las "puntas" son miradores naturales que se encuentran alrededor de la ciudad de Moyobamba, la cual esta situada en una extensa meseta, es por eso que a esta ciudad también se la reconoce por sus diversos Barrancos. La punta de Tahuishco es la más conocida y concurrida, donde aparte de apreciar el paisaje se puede degustar de diversos platos típicos en los restaurantes que se encuentran en el lugar. Por las noches además se puede visitar discotecas como "Kovachi", muy concurrida por los Moyobambinos. En el puerto de Tahuishco puedes también realizar un paseo en botemotor por las aguas del caudaloso río Mayo.</p>
       </WrapContentParagraph>
-
-      <WrapContentParagraph>
-        <h2>TIOYACU</h2>
-        <p>La naciente de Tio Yacu, se encuentra muy cerca a Moyobamba, a tan sólo 35 minutos de esta ciudad, en el Centro poblado de Segunda Jerusalén. Su principal atractivo es la naciente de este río de aguas cristalinas, se puede observar como el agua brota de entre las rocas, formando diversas cascadas y una piscina natural donde podrás tomar un relajante baño. El agua fría de este río es ideal para revitalizar el cuerpo y activar la circulación sanguínea.</p>
-      </WrapContentParagraph>
-      <img src={rioTioyacu} alt="Rio Tioyacu" />
 
       <img src={banosTermales} alt="Baños Termales de San Mateo" />
       <WrapContentParagraph>

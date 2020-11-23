@@ -18,9 +18,19 @@ var MenuNavStyles = {
   bmBurgerBars: {
     background: '#373a47'
   },
+  bmCross: {
+    backgroundColor: '#947c22',
+    height: '35px',
+    width: '5px',
+  },
+  bmCrossButton: {
+    width: '45px',
+    height: '45px'
+  },
   bmMenuWrap: {
     textAlign: 'center',
     position: 'fixed',
+    top: 0,
     height: '100%'
   },
   bmMenu: {
@@ -47,7 +57,9 @@ var MenuNavStyles = {
     boxShadow: 'none'
   },
   bmOverlay: {
-    background: 'rgba(0, 0, 0, 0.3)'
+    background: 'rgba(0, 0, 0, 0.3)',
+    top: 0,
+    left: 0
   }
 }
 
@@ -111,25 +123,21 @@ export class ResponsiveMenuComponent extends PureComponent {
         </Menu>
         <a
           href="https://api.whatsapp.com/send?phone=51942428028&text=Hola ChacraVieja deseo contactarme con ustedes"
-        // target="_blank"
         >
           <FaWhatsapp />
         </a>
         <a
           href="https://www.youtube.com/channel/UCaTwEocbP1xONnioStBofGw/"
-        // target="_blank"
         >
           <FaYoutube />
         </a>
         <a
           href="https://web.facebook.com/Chacraviejalicores/"
-        // target="_blank"
         >
           <FaFacebookF />
         </a>
         <a
           href="https://instagram.com/chacraviejalicores/"
-        // target="_blank"
         >
           <FaInstagram />
         </a>

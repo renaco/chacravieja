@@ -5,3 +5,8 @@ h2, h3 {
 svg path {
   fill: #947c22;
 }
+
+.bm-cross-button span {
+  top: 2px !important;
+  right: 9px !important;
+}

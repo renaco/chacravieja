@@ -7,8 +7,9 @@ const DownloadLink = styled.a`
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  padding-top: 10px;
+  padding: 0;
   background: rgb(0 0 0 / 50%);
+  margin-bottom: 20px;
   img {
     margin-left: 10px;
   }

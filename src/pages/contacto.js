@@ -61,7 +61,6 @@ const SecondPage = () => (
         <Input type="hidden" name="_next" value="/gracias/"></Input>
       </div>
     </ContentContact>
-    <Link to="/">Inicio</Link>
   </Layout>
 )
 
