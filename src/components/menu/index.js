@@ -41,6 +41,9 @@ var MenuNavStyles = {
   bmMorphShape: {
     fill: '#373a47'
   },
+  bmIcon: {
+    backgroundColor: '#947c22'
+  },
   bmItemList: {
     color: '#b8b7ad',
     padding: '0.8em',
@@ -68,6 +71,9 @@ const ResponsiveMenu = styled.div`
   justify-content: center;
   a {
     padding: 10px;
+  }
+  svg path {
+    fill: '#947c22'
   }
 `
 

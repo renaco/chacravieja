@@ -9,17 +9,11 @@ import homeItemTwo from "./../images/home-item-2.jpg"
 import homeItemThree from "./../images/home-item-3.jpg"
 import homeItemFour from "./../images/home-item-4.jpg"
 import homeItemMail from "./../images/home-item-mail.jpg"
+import homeItemDownload from "./../images/home-item-download.jpg"
 import Legal from "./../components/legal"
-import { HomeItem, HomeItemTitle } from "./../components/home"
+import { HomeItem, HomeItemTitle, ContentImage } from "./../components/home"
 import styled from "styled-components"
 import media from "styled-media-query"
-import DownloadFile from "./../components/download"
-
-const ContentImage = styled.div`
-  display: flex;
-  margin: 0 auto 1.45rem;
-  text-align: center;
-`
 
 const ContentItemComponent = styled.div`
   display: grid;
@@ -38,10 +32,11 @@ const IndexPage = () => (
     <ContentItemComponent>
       <React.Fragment>
         <HomeItem>
-          <Link to="/catalogo">
+          <a href="//archivos.chacravieja.com/catalogo.pdf">
             <HomeItemTitle>Catalogo de productos</HomeItemTitle>
-            <DownloadFile/>
-            <p>Descarga nuestro catalógo de productos, donde encontraras ademas: Chocolates de cacao, pasta de cacao, puros amazónicos</p></Link>
+            <img lazyload='lazy' src={homeItemDownload} alt='Descarga el catalogo' />
+            <p>Descarga nuestro catalógo de productos, donde encontraras chocolates de cacao, pasta de cacao, puros amazónicos y más.</p>
+            Descargar PDF 📥</a>
         </HomeItem>
         <HomeItem>
           <Link to="/historia">

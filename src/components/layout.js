@@ -8,6 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import ShareWhatsapp from "./../components/whatsapp"
 
 import Header from "./header"
 import styled from "styled-components"
@@ -52,10 +53,10 @@ const Layout = ({ children }) => {
       }
     }
   `)
-
+  
   return (
     <BodyApp
-      className="Home-container"
+    className="Home-container"
     >
       <Header siteTitle={data.site.siteMetadata.title} />
       <Container>
@@ -65,6 +66,7 @@ const Layout = ({ children }) => {
           {` `}
         </Footer>
       </Container>
+      <ShareWhatsapp />
     </BodyApp>
   )
 }

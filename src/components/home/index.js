@@ -14,6 +14,7 @@ export const HomeItem = styled.div`
   }
   p {
     color: white;
+    min-height: 110px;
   }
 `
 
@@ -43,4 +44,10 @@ export const HomeImage = styled.img`
     max-width: 175px;
     height: 390px;
   `}
+`
+
+export const ContentImage = styled.div`
+  display: flex;
+  margin: 0 auto 1.45rem;
+  text-align: center;
 `

@@ -5,8 +5,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { MainTitle } from "./../components/title"
 
-import media from "styled-media-query"
-
 import galleryOne from "./../images/gallery/galeria-01.jpg"
 import galleryTwo from "./../images/gallery/galeria-02.jpg"
 import galleryThree from "./../images/gallery/galeria-03.jpg"
