@@ -7,7 +7,7 @@ const DownloadLink = styled.a`
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  padding: 0;
+  padding: 10px 0 0;
   background: rgb(0 0 0 / 50%);
   margin-bottom: 20px;
   img {
@@ -21,7 +21,6 @@ const DownloadFile = () => {
 
   return (
     <DownloadLink href={downloadUrl}>
-      <span>Catalogo de productos</span>
       <img src={DownloadPDF} alt='Catalogo de productos' />
     </DownloadLink>
   )

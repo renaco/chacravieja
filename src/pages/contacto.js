@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import {
   Label,
   Input,
@@ -24,13 +23,13 @@ ${media.lessThan("medium")`
 const SecondPage = () => (
   <Layout>
     <SEO title="Contacto" />
+    <MainTitle>ESCRÍBENOS</MainTitle>
     <ContentContact
       as='form'
       onSubmit={console.log(this)}
-      method="post" action="https://formsubmit.co/chacravieja@gmail.com"
+      method="post" action="https://formsubmit.co/ventas@chacravieja.com"
       py={3}>
       <div className="sm-col sm-col-12 lg-col-6">
-        <MainTitle>ESCRÍBENOS</MainTitle>
         <p>
           Teléfono: 942 428 028 <br />
           Dirección: Jr. Reyes Guerra N° 870

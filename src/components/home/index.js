@@ -23,13 +23,24 @@ export const HomeItemTitle = styled.h5`
   color: white;
   display: flex;
   font-family: 'Times';
-  font-size: 0.9em;
+  font-size: 1em;
   justify-content: center;
   margin: 0 0 5px;
   min-height: 50px;
   padding: 5px 10px;
   text-decoration: none;
+  text-transform: uppercase;
   ${media.lessThan("medium")`
     font-size: 1.25em;
+  `}
+`
+
+export const HomeImage = styled.img`
+  margin: 0 auto 3em;
+  max-width: 140px;
+  height: 312px;
+  ${media.lessThan("medium")`
+    max-width: 175px;
+    height: 390px;
   `}
 `

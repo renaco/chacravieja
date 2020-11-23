@@ -82,3 +82,4 @@ const ProductsPage = () => (
   </Layout>
 )
 
+export default ProductsPage
