@@ -10,6 +10,7 @@ import indanachado from "./../images/products/indanachado.png"
 import chuchuhauasi from "./../images/products/chuchuhauasi.png"
 import uvachado from "./../images/products/uvachado.png"
 import rompeCalzon from "./../images/products/rompe-calzon.png"
+import huitochado from "./../images/products/huitochado.png"
 import sieteRaices from "./../images/products/siete-raices.png"
 
 const ProductsPage = () => (
@@ -62,8 +63,22 @@ const ProductsPage = () => (
         <p><strong>Detalles</strong>
           <br />
           Presentación    :  750ml / 500ml
-<br />
+          <br />
           Vol. Alcohólico :   40%  Vol.</p>
+      </WrapContentParagraph>
+
+      <ImageProductContent lazyload='lazy' src={huitochado} alt="Huitochado" />
+      <WrapContentParagraph>
+        <h2>Huitochado</h2>
+        <p>Elaborado con la fruta del Huito (Genipa Americana) Fruto silvestre y emblemático de la selva peruana.</p>
+        <p>Macerado en aguardiente de caña de sabor agradable y aromático, conocido también por su efecto curativo para el asma y reumatismo, este licor puede tomarse como aperitivo bajativo, solo o a las rocas.</p>
+        <p>Licor obtenido de la destilación directa de los jugos y melados de la caña de azúcar previamente fermentados</p>
+        <p>Elaborado con esencias naturales y tratada de la mejor manera, todos estos insumos mezclados conjugan el sabor inigualable del aguardiente Chacra Vieja.</p>
+        <p><strong>Detalles</strong>
+          <br />
+          Presentación    :  750ml / 500ml
+          <br />
+          Vol. Alcohólico :   17%  Vol.</p>
       </WrapContentParagraph>
 
       <ImageProductContent lazyload='lazy' src={indanachado} alt="Indanachado" />
