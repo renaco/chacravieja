@@ -41,9 +41,6 @@ var MenuNavStyles = {
   bmMorphShape: {
     fill: '#373a47'
   },
-  bmIcon: {
-    backgroundColor: '#947c22'
-  },
   bmItemList: {
     color: '#b8b7ad',
     padding: '0.8em',
@@ -71,9 +68,6 @@ const ResponsiveMenu = styled.div`
   justify-content: center;
   a {
     padding: 10px;
-  }
-  svg path {
-    fill: '#947c22'
   }
 `
 
@@ -111,12 +105,7 @@ export class ResponsiveMenuComponent extends PureComponent {
         <Menu
           right
           customBurgerIcon={
-            <svg
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-            </svg>
+            <svg width="40" height="28" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#A58C57" d="M0 0h40v4H0zM0 12h40v4H0zM0 24h40v4H0z"/></svg>
           }
           styles={ MenuNavStyles }
         >

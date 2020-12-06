@@ -2,12 +2,24 @@ import React from 'react';
 import styled from 'styled-components';
 
 const ShareContent = styled.div`
+  font-family: 'Rokkitt', serif;
+  background: #18B845;
   display: flex;
   flex-direction: column;
   position: fixed;
   align-items: center;
-  bottom: 10px;
+  top: 100px;
   right: 10px;
+  a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 15px;
+  }
+  svg {
+    margin-left: 10px;
+    position: relative;
+    top: 5px;
+  }
 `
 
 const ShareWhatsapp = () => {

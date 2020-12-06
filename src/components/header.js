@@ -2,6 +2,8 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
+
+import { COLORS } from "./../../src/constants/global.js"
 import logoChacraVieja from "./../images/logo-chacravieja.svg"
 import { ResponsiveMenuComponent } from "./../components/menu"
 
@@ -11,7 +13,9 @@ const HeaderBrowser = styled.header`
     margin-bottom: 0;
   }
   a {
-    display: block;
+    font-family: 'Rokkitt', serif;
+    font-weight: 600;
+    color: ${COLORS.PRIMARY}
   }
 `
 

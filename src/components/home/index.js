@@ -23,7 +23,8 @@ export const HomeItemTitle = styled.h5`
   background-color: ${CONFIG.golden};
   color: white;
   display: flex;
-  font-family: 'Times';
+  font-family: 'Rokkitt', serif;
+  font-weight: 600;
   font-size: 1em;
   justify-content: center;
   margin: 0 0 5px;

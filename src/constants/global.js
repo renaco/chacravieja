@@ -1,5 +1,9 @@
 export const CONFIG = {
-  golden: '#947c22'
+  golden: '#947c22',
+}
+
+export const COLORS = {
+  PRIMARY: '#A58C57'
 }
 
 const sizes = {

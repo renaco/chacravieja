@@ -52,6 +52,16 @@ module.exports = {
           'G-W01MEBCXN9'
         ]
       }
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Rokkitt:wght@200;600`,
+          `source sans pro\ 200, 600`
+        ],
+        display: 'swap'
+      }
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
