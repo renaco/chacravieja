@@ -45,16 +45,12 @@ module.exports = {
         imagePath: 'path.to.image'
       }
     },
-    `gatsby-plugin-google-analytics`,
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingId: "UA-15677461-35",
-        head: true,
-        exclude: ["/404.html"],
-        sampleRate: 5,
-        siteSpeedSampleRate: 10,
-        cookieDomain: "chacravieja.com"
+        trackingIds: [
+          'G-W01MEBCXN9'
+        ]
       }
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality

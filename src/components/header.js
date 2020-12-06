@@ -1,8 +1,8 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import logoChacraVieja from "./../images/chacravieja.gif"
 import styled from "styled-components"
+import logoChacraVieja from "./../images/logo-chacravieja.svg"
 import { ResponsiveMenuComponent } from "./../components/menu"
 
 const HeaderBrowser = styled.header`
@@ -15,7 +15,7 @@ const HeaderBrowser = styled.header`
   }
 `
 
-const Header = ({ siteTitle }) => (
+const Header = ({ data }) => (
   <HeaderBrowser
     style={{
       background: '#060606'
@@ -25,7 +25,7 @@ const Header = ({ siteTitle }) => (
       style={{
         margin: `0 auto`,
         maxWidth: 960,
-        padding: `0 1.0875rem 1.45rem`,
+        padding: `1.45em 1.0875rem 1.45rem`,
       }}
     >
       <h1 style={{ margin: 0 }}>

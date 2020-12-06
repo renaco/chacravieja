@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "chacravieja",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Licores Regionales Chacra Vieja - Moyobamba, San Martìn, Perú",
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
@@ -10,7 +10,7 @@
     "gatsby": "^2.13.73",
     "gatsby-image": "^2.2.10",
     "gatsby-mdx": "^0.6.2-ci.371",
-    "gatsby-plugin-google-analytics": "^2.1.23",
+    "gatsby-plugin-google-gtag": "^2.4.0",
     "gatsby-plugin-manifest": "^2.2.6",
     "gatsby-plugin-offline": "^2.2.7",
     "gatsby-plugin-react-helmet": "^3.1.4",
@@ -45,7 +45,6 @@
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.14.3",
-    "ftp-deploy": "^2.3.3",
     "object-fit-images": "^3.2.4",
     "prettier": "^1.18.2",
     "react-burger-menu": "^2.0.0",
@@ -65,7 +64,6 @@
   "scripts": {
     "build": "gatsby build --prefix-paths",
     "develop": "gatsby develop",
-    "deploy": "node deploy",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "sync": "browser-sync start --proxy localhost:8000",
     "start": "concurrently \"yarn run develop\" \"yarn run sync\"",
