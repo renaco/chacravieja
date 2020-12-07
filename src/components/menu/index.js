@@ -1,10 +1,10 @@
 import React, { PureComponent } from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
-import { FaFacebookF, FaYoutube, FaInstagram, FaWhatsapp } from "react-icons/fa"
+import { FaFacebookF, FaYoutube, FaInstagram } from "react-icons/fa"
 import { slide as Menu } from "react-burger-menu"
 
-var MenuNavStyles = {
+const MenuNavStyles = {
   bmBurgerButton: {
     background: '#000000',
     display: 'flex',
@@ -67,9 +67,58 @@ const ResponsiveMenu = styled.div`
   display: flex;
   justify-content: center;
   a {
-    padding: 10px;
+    margin: 10px;
+    display: block;
   }
 `
+
+// const MenuNav = styled.nav`
+//   display: none;
+//   flex-direction: ${props => props.mobile ? 'column' : 'row'};
+  
+//   @media(min-width: 769px) {
+//     display: flex;
+//   }
+// `
+
+const MenuLinks = () => {
+  return (
+    <>
+      <Link to="/historia">HISTORIA</Link>
+      <Link to="/productos">PRODUCTOS</Link>
+      <Link to="/turismo-y-mas">TURISMO Y MÁS</Link>
+      <Link to="/galeria">GALERÍA</Link>
+      <Link to="/contacto">CONTACTO</Link>
+    </>
+  )
+}
+
+// const ResponsiveMenuComponent = () => {
+//   return (
+//     <ResponsiveMenu>
+//       <MenuLinks/>
+//       <a href="https://www.youtube.com/channel/UCaTwEocbP1xONnioStBofGw/">
+//         <FaYoutube />
+//       </a>
+//       <a href="https://web.facebook.com/Chacraviejalicores/">
+//         <FaFacebookF />
+//       </a>
+//       <a href="https://instagram.com/chacraviejalicores/">
+//         <FaInstagram />
+//       </a>
+//       <Menu
+//         right
+//         customBurgerIcon={
+//           <svg width="40" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
+//             <path fill="#A58C57" d="M0 0h40v4H0zM0 12h40v4H0zM0 24h40v4H0z" /></svg>
+//         }
+//         styles={MenuNavStyles}
+//       >
+//         <MenuLinks />
+//       </Menu>
+//     </ResponsiveMenu>
+//   )
+// }
 
 export class ResponsiveMenuComponent extends PureComponent {
   constructor(props) {
@@ -102,40 +151,29 @@ export class ResponsiveMenuComponent extends PureComponent {
   render() {
     return (
       <ResponsiveMenu>
+        <MenuLinks mobile={false} />
+        <a href="https://www.youtube.com/channel/UCaTwEocbP1xONnioStBofGw/">
+          <FaYoutube />
+        </a>
+        <a href="https://web.facebook.com/Chacraviejalicores/">
+          <FaFacebookF />
+        </a>
+        <a href="https://instagram.com/chacraviejalicores/">
+          <FaInstagram />
+        </a>
         <Menu
           right
           customBurgerIcon={
-            <svg width="40" height="28" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#A58C57" d="M0 0h40v4H0zM0 12h40v4H0zM0 24h40v4H0z"/></svg>
+            <svg width="40" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#A58C57" d="M0 0h40v4H0zM0 12h40v4H0zM0 24h40v4H0z" />
+            </svg>
           }
-          styles={ MenuNavStyles }
+          outerContainerId={"menu-container"}
+          pageWrapId={"menu-wrap"}
+          styles={MenuNavStyles}
         >
-          <Link to="/">INICIO</Link>
-          <Link to="/historia">HISTORIA</Link>
-          <Link to="/productos">PRODUCTOS</Link>
-          <Link to="/turismo-y-mas">TURISMO Y MÁS</Link>
-          <Link to="/galeria">GALERÍA</Link>
-          <Link to="/contacto">CONTACTO</Link>
+          <MenuLinks />
         </Menu>
-        <a
-          href="https://api.whatsapp.com/send?phone=51942428028&text=Hola ChacraVieja deseo contactarme con ustedes"
-        >
-          <FaWhatsapp />
-        </a>
-        <a
-          href="https://www.youtube.com/channel/UCaTwEocbP1xONnioStBofGw/"
-        >
-          <FaYoutube />
-        </a>
-        <a
-          href="https://web.facebook.com/Chacraviejalicores/"
-        >
-          <FaFacebookF />
-        </a>
-        <a
-          href="https://instagram.com/chacraviejalicores/"
-        >
-          <FaInstagram />
-        </a>
       </ResponsiveMenu>
     )
   }

@@ -1,8 +1,23 @@
-h2, h3 {
+body, html {
+  font-size: 20px;
+}
+
+h2, h3, a {
   color: #947c22;
+  font-family: 'Rokkitt', serif;
+}
+
+p, label, button {
+  font-family: 'Rokkitt', serif;
+  font-weight: normal;
+  font-size: 1.25em;
 }
 
 .bm-cross-button span {
   top: 2px !important;
   right: 9px !important;
+}
+
+#menu-container {
+  display: none;
 }

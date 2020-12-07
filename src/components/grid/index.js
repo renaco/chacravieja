@@ -20,7 +20,14 @@ export const WrapContent = styled.div`
 export const WrapContentParagraph = styled.div`
   padding: 0 10px;
   margin-bottom: 20px;
+  p {
+    width: 90%;
+  }
   ${media.lessThan("medium")`
     padding: 0;
   `}
+`
+
+export const Divisor = styled.hr`
+  padding-bottom: 2em
 `

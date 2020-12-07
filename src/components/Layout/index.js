@@ -1,9 +1,10 @@
 import styled from "styled-components"
+import { GRID } from "./../constants/global"
 
 export const Container = styled.div`
   background: rgba(0, 0, 0, 0.75);
   margin: 0 auto;
-  max-width: 960px;
+  max-width: ${GRID.CONTAINER};
   padding-top: 0;
   padding: 0 1.0875rem 1.45rem;
 `

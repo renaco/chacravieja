@@ -8,6 +8,7 @@ const MainButton = styled.a`
   border-color: rgba(253, 247, 51, 1);
   color: black;
   display: flex;
+  font-family: 'Rokkitt', serif;
   justify-content: center;
   margin: 0 auto 20px;
   padding: 10px 20px;

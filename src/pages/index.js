@@ -1,9 +1,10 @@
 import React from "react"
 import { Link } from "gatsby"
+import styled from "styled-components"
+import media from "styled-media-query"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-// import logoBig from "./../images/logo-big.png"
 import homeItemOne from "./../images/home-item-1.jpg"
 import homeItemTwo from "./../images/home-item-2.jpg"
 import homeItemThree from "./../images/home-item-3.jpg"
@@ -11,9 +12,7 @@ import homeItemFour from "./../images/home-item-4.jpg"
 import homeItemMail from "./../images/home-item-mail.jpg"
 import homeItemDownload from "./../images/home-item-download.jpg"
 import Legal from "./../components/legal"
-import { HomeItem, HomeItemTitle, ContentImage } from "./../components/home"
-import styled from "styled-components"
-import media from "styled-media-query"
+import { HomeItem, HomeItemTitle } from "./../components/home"
 
 const ContentItemComponent = styled.div`
   display: grid;
@@ -26,54 +25,49 @@ const ContentItemComponent = styled.div`
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <ContentImage>
-      {/* <HomeImage lazyload='lazy' src={logoBig} alt="Chacra Vieja" /> */}
-    </ContentImage>
     <ContentItemComponent>
-      <React.Fragment>
-        <HomeItem>
-          <a href="//archivos.chacravieja.com/catalogo.pdf">
-            <HomeItemTitle>Catalogo de productos</HomeItemTitle>
-            <img lazyload='lazy' src={homeItemDownload} alt='Descarga el catalogo' />
-            <p>Descarga nuestro catalógo de productos, donde encontraras chocolates de cacao, pasta de cacao, puros amazónicos y más.</p>
-            Descargar PDF 📥</a>
-        </HomeItem>
-        <HomeItem>
-          <Link to="/historia">
-            <HomeItemTitle>NUESTRA HISTORIA</HomeItemTitle>
-            <img lazyload='lazy' src={homeItemThree} alt="Nuestra historia" />
-            <p>Somos una organización líder en el mercado local, reconocida como una empresa competitiva y de proyección internacional.</p>
-            Leer más</Link>
-        </HomeItem>
-        <HomeItem>
-          <Link to="/productos">
-            <HomeItemTitle>NUESTROS PRODUCTOS</HomeItemTitle>
-            <img lazyload='lazy' src={homeItemTwo} alt="Nuestros productos" />
-            <p>No importa que licor sea tu favorito, ¡En Chacra Vieja lo encontrarás!</p>
-            Leer más</Link>
-        </HomeItem>
-        <HomeItem>
-          <Link to="/turismo-y-mas">
-            <HomeItemTitle>GUÍA TURÍSTICA MOYOBAMBA</HomeItemTitle>
-            <img lazyload='lazy' src={homeItemFour} alt="Guía turística Moyobamba" />
-            <p>Conoce el hermoso Valle del Alto Mayo, Moyobamba, la ciudad de las Orquídeas.</p>
-            Leer más</Link>
-        </HomeItem>
-        <HomeItem>
-          <Link to="/galeria">
-            <HomeItemTitle>GALERÍA</HomeItemTitle>
-            <img lazyload='lazy' src={homeItemOne} alt="Galería" />
-            <p>Disfruta tus licores regionales preferidos en nuestros nuestra licorería situada en Moyobamba, San Martín.</p>
-            Leer más</Link>
-        </HomeItem>
-        <HomeItem>
-          <Link to="/contacto">
-            <HomeItemTitle>CONTACTANOS</HomeItemTitle>
-            <img lazyload='lazy' src={homeItemMail} alt="Contactanos" />
-            <p>Encuentranos y gustosamente te explicaremos acerca de nuestros productos.</p>
-            Ponte en contacto</Link>
-        </HomeItem>
-      </React.Fragment>
+      <HomeItem>
+        <a href="//archivos.chacravieja.com/catalogo.pdf">
+          <HomeItemTitle>Catalogo de productos</HomeItemTitle>
+          <img lazyload='lazy' src={homeItemDownload} alt='Descarga el catalogo' />
+          <p>Descarga nuestro catalógo de productos, donde encontraras chocolates de cacao, pasta de cacao, puros amazónicos y más.</p>
+          Descargar PDF 📥</a>
+      </HomeItem>
+      <HomeItem>
+        <Link to="/historia">
+          <HomeItemTitle>NUESTRA HISTORIA</HomeItemTitle>
+          <img lazyload='lazy' src={homeItemThree} alt="Nuestra historia" />
+          <p>Somos una organización líder en el mercado local, reconocida como una empresa competitiva y de proyección internacional.</p>
+          Leer más</Link>
+      </HomeItem>
+      <HomeItem>
+        <Link to="/productos">
+          <HomeItemTitle>NUESTROS PRODUCTOS</HomeItemTitle>
+          <img lazyload='lazy' src={homeItemTwo} alt="Nuestros productos" />
+          <p>No importa que licor sea tu favorito, ¡En Chacra Vieja lo encontrarás!</p>
+          Leer más</Link>
+      </HomeItem>
+      <HomeItem>
+        <Link to="/turismo-y-mas">
+          <HomeItemTitle>GUÍA TURÍSTICA MOYOBAMBA</HomeItemTitle>
+          <img lazyload='lazy' src={homeItemFour} alt="Guía turística Moyobamba" />
+          <p>Conoce el hermoso Valle del Alto Mayo, Moyobamba, la ciudad de las Orquídeas.</p>
+          Leer más</Link>
+      </HomeItem>
+      <HomeItem>
+        <Link to="/galeria">
+          <HomeItemTitle>GALERÍA</HomeItemTitle>
+          <img lazyload='lazy' src={homeItemOne} alt="Galería" />
+          <p>Disfruta tus licores regionales preferidos en nuestros nuestra licorería situada en Moyobamba, San Martín.</p>
+          Leer más</Link>
+      </HomeItem>
+      <HomeItem>
+        <Link to="/contacto">
+          <HomeItemTitle>CONTACTANOS</HomeItemTitle>
+          <img lazyload='lazy' src={homeItemMail} alt="Contactanos" />
+          <p>Encuentranos y gustosamente te explicaremos acerca de nuestros productos.</p>
+          Ponte en contacto</Link>
+      </HomeItem>
     </ContentItemComponent>
     <Legal/>
   </Layout>
