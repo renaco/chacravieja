@@ -1,75 +1,61 @@
 import React from "react"
-import { Link } from "gatsby"
-import styled from "styled-components"
-import media from "styled-media-query"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import homeItemOne from "./../images/home-item-1.jpg"
-import homeItemTwo from "./../images/home-item-2.jpg"
-import homeItemThree from "./../images/home-item-3.jpg"
-import homeItemFour from "./../images/home-item-4.jpg"
-import homeItemMail from "./../images/home-item-mail.jpg"
-import homeItemDownload from "./../images/home-item-download.jpg"
+import homeGallery from "./../images/home-gallery.jpg"
+import homeGuide from "./../images/home-guide.jpg"
+import homeHistory from "./../images/home-history.jpg"
+import ourProducts from "./../images/nuestros-productos.jpg"
 import Legal from "./../components/legal"
-import { HomeItem, HomeItemTitle } from "./../components/home"
-
-const ContentItemComponent = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(33%, 1fr));
-  ${media.lessThan("medium")`
-    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
-  `}
-`
+import { HomeItem, HomeColumn } from "./../components/home"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <ContentItemComponent>
-      <HomeItem>
-        <a href="//archivos.chacravieja.com/catalogo.pdf">
-          <HomeItemTitle>Catalogo de productos</HomeItemTitle>
-          <img lazyload='lazy' src={homeItemDownload} alt='Descarga el catalogo' />
-          <p>Descarga nuestro catalógo de productos, donde encontraras chocolates de cacao, pasta de cacao, puros amazónicos y más.</p>
-          Descargar PDF 📥</a>
-      </HomeItem>
-      <HomeItem>
-        <Link to="/historia">
-          <HomeItemTitle>NUESTRA HISTORIA</HomeItemTitle>
-          <img lazyload='lazy' src={homeItemThree} alt="Nuestra historia" />
-          <p>Somos una organización líder en el mercado local, reconocida como una empresa competitiva y de proyección internacional.</p>
-          Leer más</Link>
-      </HomeItem>
-      <HomeItem>
-        <Link to="/productos">
-          <HomeItemTitle>NUESTROS PRODUCTOS</HomeItemTitle>
-          <img lazyload='lazy' src={homeItemTwo} alt="Nuestros productos" />
-          <p>No importa que licor sea tu favorito, ¡En Chacra Vieja lo encontrarás!</p>
-          Leer más</Link>
-      </HomeItem>
-      <HomeItem>
-        <Link to="/turismo-y-mas">
-          <HomeItemTitle>GUÍA TURÍSTICA MOYOBAMBA</HomeItemTitle>
-          <img lazyload='lazy' src={homeItemFour} alt="Guía turística Moyobamba" />
-          <p>Conoce el hermoso Valle del Alto Mayo, Moyobamba, la ciudad de las Orquídeas.</p>
-          Leer más</Link>
-      </HomeItem>
-      <HomeItem>
-        <Link to="/galeria">
-          <HomeItemTitle>GALERÍA</HomeItemTitle>
-          <img lazyload='lazy' src={homeItemOne} alt="Galería" />
-          <p>Disfruta tus licores regionales preferidos en nuestros nuestra licorería situada en Moyobamba, San Martín.</p>
-          Leer más</Link>
-      </HomeItem>
-      <HomeItem>
-        <Link to="/contacto">
-          <HomeItemTitle>CONTACTANOS</HomeItemTitle>
-          <img lazyload='lazy' src={homeItemMail} alt="Contactanos" />
-          <p>Encuentranos y gustosamente te explicaremos acerca de nuestros productos.</p>
-          Ponte en contacto</Link>
-      </HomeItem>
-    </ContentItemComponent>
-    <Legal/>
+    <HomeColumn>
+
+      <HomeItem
+        link={'/galeria'}
+        title={'Galería'}
+        image={homeGallery}
+        description={'Descarga el catalogo'}
+        paragraph={'Disfruta tus licores regionales preferidos en nuestra licorería situada en Moyobamba, San Martín'}
+        label={'Leer más'}
+        width={'33.3%'}
+      />
+
+      <HomeItem
+        link={'/productos'}
+        title={'Nuestros productos'}
+        image={ourProducts}
+        description={'Descarga el catalogo'}
+        paragraph={'Licor de Chuchuhuasi, Chuchuwasi o Chuchuwasha, macerado de la corteza del árbol amazónico de Chuchuhuasi en aguardiente de caña, su aroma y sabor amaderado delatan su origen de selva alta, entre algunas de sus propiedades'}
+        label={'Leer más >'}
+        width={'66.6%'}
+      />
+
+    </HomeColumn>
+    <HomeColumn>
+      <HomeItem
+        link={'/turismo-y-mas'}
+        title={'Guía turística Moyobamba'}
+        image={homeGuide}
+        description={'Descarga el catalogo'}
+        paragraph={'En Moyobamba, en plena selva alta a 903 metros sobre el nivel del mar y rodeados de un ambiente natural propio de la zona, se encuentran los Baños Sulfurosos de Orominas baños termales a 8 grados...'}
+        label={'Leer más >'}
+        width={'66.6%'}
+      />
+
+      <HomeItem
+        link={'/historia'}
+        title={'Nuestra historia'}
+        image={homeHistory}
+        description={'Descarga el catalogo'}
+        paragraph={'En el hermoso valle del Alto Mayo, en la bella ciudad de Moyobamba acompañada de añejas costumbres'}
+        label={'Leer más >'}
+        width={'33.3%'}
+      />
+    </HomeColumn>
+    <Legal />
   </Layout>
 )
 

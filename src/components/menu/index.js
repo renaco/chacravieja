@@ -84,6 +84,7 @@ const ResponsiveMenu = styled.div`
 const MenuLinks = () => {
   return (
     <>
+      <Link to="/">INICIO</Link>
       <Link to="/historia">HISTORIA</Link>
       <Link to="/productos">PRODUCTOS</Link>
       <Link to="/turismo-y-mas">TURISMO Y MÁS</Link>
