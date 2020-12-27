@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 import { FaFacebookF, FaYoutube, FaInstagram } from "react-icons/fa"
 import { slide as Menu } from "react-burger-menu"
+import { SIZES } from "../../constants/global.js"
 
 const MenuNavStyles = {
   bmBurgerButton: {
@@ -66,20 +67,15 @@ const MenuNavStyles = {
 const ResponsiveMenu = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: ${props => props.mobile ? 'column' : 'row'};
+  margin-left: auto;
+
   a {
     margin: 10px;
     display: block;
   }
 `
-
-// const MenuNav = styled.nav`
-//   display: none;
-//   flex-direction: ${props => props.mobile ? 'column' : 'row'};
-  
-//   @media(min-width: 769px) {
-//     display: flex;
-//   }
-// `
 
 const MenuLinks = () => {
   return (
@@ -93,33 +89,6 @@ const MenuLinks = () => {
     </>
   )
 }
-
-// const ResponsiveMenuComponent = () => {
-//   return (
-//     <ResponsiveMenu>
-//       <MenuLinks/>
-//       <a href="https://www.youtube.com/channel/UCaTwEocbP1xONnioStBofGw/">
-//         <FaYoutube />
-//       </a>
-//       <a href="https://web.facebook.com/Chacraviejalicores/">
-//         <FaFacebookF />
-//       </a>
-//       <a href="https://instagram.com/chacraviejalicores/">
-//         <FaInstagram />
-//       </a>
-//       <Menu
-//         right
-//         customBurgerIcon={
-//           <svg width="40" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
-//             <path fill="#A58C57" d="M0 0h40v4H0zM0 12h40v4H0zM0 24h40v4H0z" /></svg>
-//         }
-//         styles={MenuNavStyles}
-//       >
-//         <MenuLinks />
-//       </Menu>
-//     </ResponsiveMenu>
-//   )
-// }
 
 export class ResponsiveMenuComponent extends PureComponent {
   constructor(props) {
@@ -152,7 +121,7 @@ export class ResponsiveMenuComponent extends PureComponent {
   render() {
     return (
       <ResponsiveMenu>
-        <MenuLinks mobile={false} />
+        {/* <MenuLinks mobile={false} /> */}
         <a href="https://www.youtube.com/channel/UCaTwEocbP1xONnioStBofGw/">
           <FaYoutube />
         </a>

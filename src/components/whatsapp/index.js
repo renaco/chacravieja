@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { WHATSAPP } from './../../constants/global'
+import { WHATSAPP, SIZES } from './../../constants/global'
 
 const ShareLink = styled.a`
   align-items: center;
@@ -15,7 +15,8 @@ const ShareLink = styled.a`
   position: fixed;
   right: 10px;
   text-decoration: none;
-  top: 120px;
+  top: inherit;
+  bottom: 15px;
 
   span {
     font-weight: 600;
@@ -25,8 +26,9 @@ const ShareLink = styled.a`
     margin-left: 10px;
   }
 
-  @media (min-width: 769px) {
-    top: 100px;
+  @media (min-width: ${SIZES.mobile}) {
+    top: 150px;
+    bottom: inherit;
   }
 `
 

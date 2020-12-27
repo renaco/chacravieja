@@ -5,7 +5,6 @@ import homeGallery from "./../images/home-gallery.jpg"
 import homeGuide from "./../images/home-guide.jpg"
 import homeHistory from "./../images/home-history.jpg"
 import ourProducts from "./../images/nuestros-productos.jpg"
-import Legal from "./../components/legal"
 import { HomeItem, HomeColumn } from "./../components/home"
 
 const IndexPage = () => (
@@ -34,6 +33,7 @@ const IndexPage = () => (
       />
 
     </HomeColumn>
+
     <HomeColumn>
       <HomeItem
         link={'/turismo-y-mas'}
@@ -55,7 +55,6 @@ const IndexPage = () => (
         width={'33.3%'}
       />
     </HomeColumn>
-    <Legal />
   </Layout>
 )
 

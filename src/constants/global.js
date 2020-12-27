@@ -16,12 +16,12 @@ export const WHATSAPP = {
   CONTACT: `https://api.whatsapp.com/send?phone=51942428028&text=Hola ChacraVieja deseo contactarme con ustedes`
 }
 
-const sizes = {
-  mobile : '40em',
-  laptop : '1440px'
+export const SIZES = {
+  mobile: '40em',
+  laptop: '1440px'
 }
 
-export const device = {
-  mobile: `(max-width : ${sizes.mobile})`,
-  laptop: `(max-width : ${sizes.laptop})`
+export const DEVICE = {
+  mobile: `(max-width : ${SIZES.mobile})`,
+  laptop: `(max-width : ${SIZES.laptop})`
 }

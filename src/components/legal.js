@@ -8,7 +8,7 @@ const LegalBar = styled.div`
   width: 100%;
 `
 
-const LegalCode = styled.code`
+const LegalCode = styled.strong`
   color: #EFEFEF;
   font-size: 1em;
   font-family: 'open sans condensed', sans-serif;
