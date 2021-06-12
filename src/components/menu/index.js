@@ -91,32 +91,6 @@ const MenuLinks = () => {
 }
 
 export class ResponsiveMenuComponent extends PureComponent {
-  constructor(props) {
-    super(props)
-    this.state = {
-      menuOpen: false
-    };
-  }
-
-  handleStateChange(state) {
-    this.setState({
-      menuOpen: state.isOpen
-    })
-  }
-
-  closeMenu() {
-    this.setState({
-      menuOpen: false
-    })
-  }
-
-  toggleMenu() {
-    this.setState(
-      state => ({
-        menuOpen: !state.menuOpen
-      })
-    )
-  }
 
   render() {
     return (

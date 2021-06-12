@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Licores Regionales Chacra Vieja - Moyobamba, San Martìn, Perú`,
+    title: `Chacra Vieja - Licores Regionales`,
     description: `Licores Regionales Chacra Vieja - Moyobamba, San Martìn, Perú. Alto Mayo, Uvachado, Rompe calzón, Siete raíces, bodega, chocolates, tabacos`,
     author: `@renaco`,
     menuLinks: [

@@ -9,9 +9,11 @@ const Header = ({ menuLinks }) => {
   return (
     <HeaderBrowser>
       <HeaderContent>
-        <Link to="/">
-          <img src={logoChacraVieja} alt="Chacra Vieja" title="Chacra Vieja" />
-        </Link>
+        <h1>
+          <Link to="/">
+            <img src={logoChacraVieja} alt="Chacra Vieja" title="Chacra Vieja" />
+          </Link>
+        </h1>
         <ResponsiveMenuComponent items={menuLinks} />
       </HeaderContent>
     </HeaderBrowser>
