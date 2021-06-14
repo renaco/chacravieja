@@ -3,7 +3,6 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 import { FaFacebookF, FaYoutube, FaInstagram } from "react-icons/fa"
 import { slide as Menu } from "react-burger-menu"
-import { SIZES } from "../../constants/global.js"
 
 const MenuNavStyles = {
   bmBurgerButton: {

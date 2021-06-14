@@ -1,20 +1,24 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from "gatsby"
 
-const ContentMiddle = styled.div`
-  display: flex;
+const ContentMiddle = styled(Link)`
+  display: grid;
   background: #321D1D;
-  flex-direction: column;
+  text-decoration: none;
+  grid-template-columns: 2fr 10fr;
+  flex-basis: 100%;
+  justify-content: center;
   padding: 20px;
+  /* margin-bottom: 120px; */
 `;
 
-const ContenMidleHeader = styled.header`
-  display: flex;
-  flex-direction: row;
+const ContentMiddleHeader = styled.header`
+  width: 100%;
 `;
 
 const TitleMiddle = styled.div`
-  font-family: Rokkitt;
+  font-family: 'Rokkitt';
   font-style: normal;
   font-weight: bold;
   font-size: 35px;
@@ -23,7 +27,7 @@ const TitleMiddle = styled.div`
 `;
 
 const SubTittleMiddle = styled.div`
-  font-family: Rokkitt;
+  font-family: 'Rokkitt';
   font-style: normal;
   font-weight: 500;
   font-size: 30px;
@@ -31,19 +35,23 @@ const SubTittleMiddle = styled.div`
   color: #C6C6C6;
 `;
 
-const IconMidle = styled.img`
+const IconMiddle = styled.img`
   margin-right: 10px;
   width: 50px;
   height: 50px;
 `;
 
-export const ItemMiddle = ({icon, description, title, subtitle
-}) => (
-  <ContentMiddle>
-    <ContenMidleHeader>
-      <IconMidle src={icon} alt={description} title={description} />
+export const ItemSeparator = styled.span`
+  border-right: 2px dotted #9D7C29;
+  height: 100%;
+`;
+
+export const ItemMiddle = ({icon, description, title, subtitle, link }) => (
+  <ContentMiddle to={link}>
+      <IconMiddle src={icon} alt={description} title={description} />
+    <ContentMiddleHeader>
       <TitleMiddle>{title}</TitleMiddle>
-    </ContenMidleHeader>
-    <SubTittleMiddle>{subtitle}</SubTittleMiddle>
+      <SubTittleMiddle>{subtitle}</SubTittleMiddle>
+    </ContentMiddleHeader>
   </ContentMiddle>
 );

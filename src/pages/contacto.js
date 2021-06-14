@@ -32,8 +32,8 @@ const SecondPage = () => (
       <div className="sm-col sm-col-12 lg-col-6">
         <p>
           Teléfono: 942 428 028 <br />
-          Dirección: Jr. Reyes Guerra N° 870
-            Barrio de Zaragoza, Moyobamba, Perú <br />
+          Dirección: Jr. Reyes Guerra N° 870 <br />
+          Barrio de Zaragoza, Moyobamba, Perú <br />
           Correo electrónico: <a href="mailto:ventas@chacravieja.com">ventas@chacravieja.com</a>
           <br />
         </p>

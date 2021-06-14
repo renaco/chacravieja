@@ -4,7 +4,7 @@ import styled from "styled-components";
 const LegalBar = styled.div`
   background: rgba(221, 192, 0, 0.5);
   text-align: center;
-  padding: 15px 0;
+  padding: 25px 0;
   width: 100%;
 `
 

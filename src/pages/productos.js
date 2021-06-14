@@ -27,7 +27,7 @@ const ProductsPage = () => (
         <p><strong>Detalles</strong>
           <br />
           Presentación    :  750ml / 500ml
-<br />
+          <br />
           Vol. Alcohólico :  40% Vol.</p>
       </WrapContentParagraph>
       <ImageProductContent lazyload='lazy' src={uvachado} alt="Uvachado" />
@@ -37,7 +37,7 @@ const ProductsPage = () => (
         <p><strong>Detalles</strong>
           <br />
           Presentación     :  750ml / 500ml
-<br />
+          <br />
           Vol. Alcohólico  :   21% Vol.</p>
       </WrapContentParagraph>
 
@@ -51,7 +51,7 @@ const ProductsPage = () => (
         <p><strong>Detalles</strong>
           <br />
           Presentación     : 75Oml /500ml
-<br />
+          <br />
           Vol. Alcohólico   : 40% Vol.</p>
       </WrapContentParagraph>
 
@@ -89,7 +89,7 @@ const ProductsPage = () => (
         <p><strong>Detalles</strong>
           <br />
           Presentación    :  750ml / 500ml
-<br />
+          <br />
           Vol. Alcohólico :   17%  Vol.</p>
       </WrapContentParagraph>
 

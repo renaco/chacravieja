@@ -37,22 +37,22 @@ const GalleryPage = () => (
     <SEO title="Galería" />
     <MainTitle>GALERÍA</MainTitle>
     <GalleryContent>
-      <img src={galleryOne} alt="" />
-      <img src={galleryTwo} alt="" />
-      <img src={galleryThree} alt="" />
-      <img src={galleryFour} alt="" />
-      <img src={galleryFive} alt="" />
-      <img src={gallerySix} alt="" />
-      <img src={gallerySeven} alt="" />
-      <img src={galleryEight} alt="" />
-      <img src={galleryNine} alt="" />
-      <img src={galleryTen} alt="" />
-      <img src={galleryEleven} alt="" />
-      <img src={galleryTwelve} alt="" />
-      <img src={galleryThirteen} alt="" />
-      <img src={galleryFourteen} alt="" />
-      <img src={galleryFifteen} alt="" />
-      <img src={gallerySixteen} alt="" />
+      <img src={galleryOne} alt="Galería" />
+      <img src={galleryTwo} alt="Galería" />
+      <img src={galleryThree} alt="Galería" />
+      <img src={galleryFour} alt="Galería" />
+      <img src={galleryFive} alt="Galería" />
+      <img src={gallerySix} alt="Galería" />
+      <img src={gallerySeven} alt="Galería" />
+      <img src={galleryEight} alt="Galería" />
+      <img src={galleryNine} alt="Galería" />
+      <img src={galleryTen} alt="Galería" />
+      <img src={galleryEleven} alt="Galería" />
+      <img src={galleryTwelve} alt="Galería" />
+      <img src={galleryThirteen} alt="Galería" />
+      <img src={galleryFourteen} alt="Galería" />
+      <img src={galleryFifteen} alt="Galería" />
+      <img src={gallerySixteen} alt="Galería" />
     </GalleryContent>
   </Layout>
 )

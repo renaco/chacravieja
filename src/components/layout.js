@@ -42,9 +42,9 @@ const BodyApp = styled.div`
 const Container = styled.div`
   background: rgba(0, 0, 0, 0.75);
   margin: 0 auto;
-  max-width: ${GRID.CONTAINER};
+  /* max-width: ${GRID.CONTAINER}; */
   padding-top: 0;
-  padding: 0 1.0875rem 1.45rem;
+  padding: 0;
 `
 
 const PreFooter = styled.span`
@@ -78,11 +78,11 @@ const Layout = ({ children }) => {
       <Container>
         <main>{children}</main>
       </Container>
-      <Legal />
       <Footer>
         © {new Date().getFullYear()} Todos los derechos reservados | Licores Regionales <PreFooter>Chacra Vieja</PreFooter> - Moyobamba, San Martín, Perú.
         {` `}
       </Footer>
+      <Legal />
       <ShareWhatsapp />
     </BodyApp>
   )

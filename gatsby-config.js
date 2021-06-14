@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
   siteMetadata: {
     title: `Chacra Vieja - Licores Regionales`,
@@ -87,6 +89,15 @@ module.exports = {
           `source sans pro\ 200, 600`
         ],
         display: 'swap'
+      }
+    },
+    {
+      resolve: `gatsby-plugin-alias-imports`,
+      options: {
+        alias: {
+          "@components": path.resolve(__dirname, 'src/components'),
+          "@images": "src/images"
+        }
       }
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality

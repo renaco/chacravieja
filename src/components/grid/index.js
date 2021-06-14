@@ -23,7 +23,7 @@ export const WrapContentParagraph = styled.div`
   p {
     width: 90%;
   }
-  ${media.lessThan("medium")`
+  ${media.lessThan('medium')`
     padding: 0;
   `}
 `
