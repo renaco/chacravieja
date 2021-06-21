@@ -9,6 +9,8 @@ import {
   HomeSubTittle
 } from "@components/home";
 import pagos from "./../images/pagos.jpg"
+import BCP from "@images/folder/bcp.svg"
+import BBVA from "@images/folder/bbva.svg"
 
 const GalleryPage = () => (
   <Layout>
@@ -26,12 +28,29 @@ const GalleryPage = () => (
         />
 
         <HomeItem
-          title={"Aceptamos todas las tarjetas"}
-          paragraph={
-            "Contamos con la siguientes cuentas: Visa, Mastercard, American Express. Ademas puede depositarnos a los siguientes cuentas:"
-          }
+          title={"BANCO CONTINENTAL"}
+          icon={BBVA}
           width={"66.6%"}
-        />
+        >
+          <p>
+          CTA AHORROS <br/> 0011-0314-0200535895 <br/> CESAR RUIZ VELA
+          </p>
+        </HomeItem>
+        <HomeItem
+          title={`BCP`}
+          icon={BCP}
+          width={"66.6%"}
+          >
+          <p>
+          CUENTA CORRIENTE <br/>
+            SHESHIN E.I.R.L <br/>
+            435-2492093-0-94
+          </p>
+          <p>
+            CUENTA INTERBANCARIO <br/>
+            002-43500249209309468
+          </p>
+        </HomeItem>
       </HomeColumn>
     </HomeContent>
   </Layout>

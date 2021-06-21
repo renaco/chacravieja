@@ -12,7 +12,7 @@ import shipping from "./../images/envios.jpg"
 
 const GalleryPage = () => (
   <Layout>
-    <SEO title="Galería" />
+    <SEO title="Envíos" />
 
     <HomeContent>
       <HomeColumn>
@@ -27,9 +27,7 @@ const GalleryPage = () => (
 
         <HomeItem
           title={"Hacemos envíos a todo el Perú"}
-          paragraph={
-            "Hacemos envíos a todo el país por Olva Courier y Movil Tour de manera que puedas hacer tus compras cómodamente desde tu casa u oficina."
-          }
+          paragraph={"MOVILBUS, MARVISUR"}
           width={"66.6%"}
         />
       </HomeColumn>

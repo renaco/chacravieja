@@ -9,6 +9,10 @@ import Card from "@images/icons/card.svg"
 import Box from "@images/icons/box.svg"
 import Typography from "@images/typography.svg"
 import Bodegon from "@images/bodegon.jpg"
+// import embarcadero from "@images/home/embarcadero.png"
+// import mirador from "@images/home/mirador-tahuishco.png"
+// import oromina from "@images/home/oromina.png"
+// import tingana from "@images/home/tingana.png"
 
 import {
   HomeItem,
@@ -19,7 +23,9 @@ import {
   HomeSlideParagraph as HomeSlideParagraph,
   HomeSlideButton,
   HomeGridSlider,
-  HomeSubTittle
+  HomeSubTittle,
+  HomePlace,
+  HomePlaceItem
 } from "@components/home";
 import { ItemMiddle, ItemSeparator } from "@components/middle";
 
@@ -28,6 +34,13 @@ const IndexPage = () => {
   function downloadCatalog(e) {
     console.log('this', e);
   }
+
+  const items = [
+    { type: 'Región', value: 'Región San Martín' },
+    { type: 'Latitud', value: -6.03473 },
+    { type: 'Longitud', value: -76.9747 },
+    { type: 'Altitud', value: '860 msnm' }
+  ]
 
   return (
     <Layout>
@@ -131,6 +144,48 @@ const IndexPage = () => {
           />
         </HomeContactContent>
       </HomeContent>
+      {/* <HomeContent>
+        <HomeColumn>
+          <HomeSubTittle title={'SITIOS ESTRATÉGICOS'} />
+        </HomeColumn>
+        <HomeColumn>
+          <HomeItem
+            image={embarcadero}
+            paragraph={
+              "Embarcadero de Tahuishco Av. Los Huambrillos 333 Celular 987229222"
+            }
+            width={"33.3%"}
+          />
+          <HomeItem
+            image={mirador}
+            paragraph={
+              "Baños de Oromina Av. Los Huambrillos 333 Celular 987229222"
+            }
+            width={"33.3%"}
+          />
+          <HomeItem
+            image={oromina}
+            paragraph={
+              "Mirador de Tahuishco Av. Los Huambrillos 333 Celular 987229222 "
+            }
+            width={"33.3%"}
+          />
+          <HomeItem
+            image={tingana}
+            paragraph={
+              "La Tingana Av. Los Huambrillos 333 Celular 987229222"
+            }
+            width={"33.3%"}
+          />
+        </HomeColumn>
+      </HomeContent> */}
+      {/* <HomeContent>
+        <HomeColumn>
+          <HomePlace>
+            <HomePlaceItem items={items} />
+          </HomePlace>
+        </HomeColumn>
+      </HomeContent> */}
     </Layout>
   )
 }

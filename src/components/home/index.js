@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 import { CONFIG, SIZES, GRID } from "./../../constants/global"
 import media from "styled-media-query"
-import { HomeSubTittleStyled, HomeSubTitleBulletPoint } from './styled'
+import { HomeSubTittleStyled, HomeSubTitleBulletPoint, HomePlaceStyle } from './styled'
 
 export const HomeColumn = styled.div`
   width: 100%;
@@ -63,7 +63,6 @@ export const HomeGridSlider = styled.div`
   @media (min-width: ${SIZES.mobile}) {
     grid-template-columns: 6fr 4fr;
   }
-
 `
 
 export const HomeSlideParagraph = styled.p`
@@ -165,7 +164,7 @@ export const HomeItem = ({ children, link, title, image, description, paragraph,
     <img lazyload='lazy' src={image} alt={description} />
     {title && <HomeLinkInnerContent>
       <h2>{title}</h2>
-      <p>{paragraph}</p>
+      {paragraph && <p>{paragraph}</p>}
       {children}
       <strong>{label}</strong>
     </HomeLinkInnerContent>}
@@ -179,4 +178,22 @@ export const HomeSubTittle = ({title}) => (
       {title}
     </span>
   </HomeSubTittleStyled>
+)
+
+export const HomePlace = ({title, children}) => (
+  <HomePlaceStyle>
+    <h2>{title}</h2>
+    {children}
+  </HomePlaceStyle>
+)
+
+export const HomePlaceItem = ({items}) => (
+  items.map((item, index) => {
+    return (
+      <div key={index}>
+        <strong>{item.type}</strong>
+        <span>{item.value}</span>
+      </div>
+    )
+  })
 )
