@@ -9,11 +9,11 @@ const MenuNavStyles = {
     background: '#000000',
     display: 'flex',
     justifyContent: 'center',
-    padding: '5px',
+    padding: '5px 6px 7px',
     position: 'fixed',
     right: 0,
     top: 0,
-    width: '50px'
+    width: '52px'
   },
   bmBurgerBars: {
     background: '#373a47'

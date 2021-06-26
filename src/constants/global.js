@@ -18,10 +18,12 @@ export const WHATSAPP = {
 
 export const SIZES = {
   mobile: '40em',
+  tablet: '1024px',
   laptop: '1440px'
 }
 
 export const DEVICE = {
   mobile: `(max-width : ${SIZES.mobile})`,
+  tablet: `(max-width : ${SIZES.tablet})`,
   laptop: `(max-width : ${SIZES.laptop})`
 }

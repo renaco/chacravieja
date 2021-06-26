@@ -6,7 +6,7 @@ const ContentMiddle = styled(Link)`
   display: grid;
   background: #321D1D;
   text-decoration: none;
-  grid-template-columns: 2fr 10fr;
+  grid-template-columns: 3fr 10fr;
   flex-basis: 100%;
   justify-content: center;
   padding: 20px;

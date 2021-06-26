@@ -9,6 +9,7 @@ import Card from "@images/icons/card.svg"
 import Box from "@images/icons/box.svg"
 import Typography from "@images/typography.svg"
 import Bodegon from "@images/bodegon.jpg"
+// import Map from "@images/icons/map.svg"
 // import embarcadero from "@images/home/embarcadero.png"
 // import mirador from "@images/home/mirador-tahuishco.png"
 // import oromina from "@images/home/oromina.png"
@@ -25,7 +26,7 @@ import {
   HomeGridSlider,
   HomeSubTittle,
   HomePlace,
-  HomePlaceItem
+  HomePlaceItems
 } from "@components/home";
 import { ItemMiddle, ItemSeparator } from "@components/middle";
 
@@ -36,10 +37,10 @@ const IndexPage = () => {
   }
 
   const items = [
-    { type: 'Región', value: 'Región San Martín' },
-    { type: 'Latitud', value: -6.03473 },
-    { type: 'Longitud', value: -76.9747 },
-    { type: 'Altitud', value: '860 msnm' }
+    { type: 'Región:', value: 'Región San Martín' },
+    { type: 'Latitud:', value: -6.03473 },
+    { type: 'Longitud:', value: -76.9747 },
+    { type: 'Altitud:', value: '860 msnm' }
   ]
 
   return (
@@ -179,13 +180,14 @@ const IndexPage = () => {
           />
         </HomeColumn>
       </HomeContent> */}
-      {/* <HomeContent>
+      <HomeContent>
         <HomeColumn>
-          <HomePlace>
-            <HomePlaceItem items={items} />
+          {/* <img src={Map} alt="Moyobamba" width="17px" /> */}
+          <HomePlace title={'Moyobamba'} url="https://www.google.com/maps?q=moyobamba&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjN7sGbybTxAhUUIbkGHTsIBXMQ_AUoAnoECAEQBQ" target="_blank">
+            <HomePlaceItems items={items} />
           </HomePlace>
         </HomeColumn>
-      </HomeContent> */}
+      </HomeContent>
     </Layout>
   )
 }

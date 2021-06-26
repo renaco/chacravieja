@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 import { CONFIG, SIZES, GRID } from "./../../constants/global"
 import media from "styled-media-query"
-import { HomeSubTittleStyled, HomeSubTitleBulletPoint, HomePlaceStyle } from './styled'
+import { HomeSubTittleStyled, HomeSubTitleBulletPoint, HomePlaceStyle, HomePlaceItem, HomePlaceItemTitle, HomePlaceListItems } from './styled'
 
 export const HomeColumn = styled.div`
   width: 100%;
@@ -77,7 +77,7 @@ export const HomeSlideButton = styled.a`
   display: inline-flex;
   padding: 10px 15px;
   font-weight: 600;
-  margin: 0 20px;
+  margin: 0 20px 50px;
   font-size: 24px;
   width: auto;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
@@ -90,6 +90,7 @@ export const HomeSlideButton = styled.a`
     display: block;
     width: 19px;
     position: relative;
+    margin: 0 auto;
     top: 2px;
     height: 23px;
   }
@@ -99,12 +100,15 @@ export const HomeContactContent = styled.div`
   border-radius: 20px;
   overflow: hidden;
   display: grid;
-  padding: 10px;
+  width: 90%;
+  margin: 0 auto;
+  /* padding: 10px; */
 
   @media (min-width: ${SIZES.mobile}) {
-    flex-direction: row;
+    grid-template-columns: 5fr 5fr;
+    /* flex-direction: row; */
     display: flex;
-    width: 100%;
+    /* width: 98%; */
   }
 `
 
@@ -116,9 +120,9 @@ export const HomeContactSeparator = styled.span`
 
 export const HomeLinkInner = styled(props => <Link {...props} />)`
   background: white;
-  margin: 0 0 30px;
+  margin: 0 auto 30px;
   text-align: left;
-  width: 100%;
+  width: 90%;
   padding: 0;
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.12);
   text-decoration: none;
@@ -146,10 +150,11 @@ export const HomeLinkInner = styled(props => <Link {...props} />)`
 
 export const HomeContent = styled.div`
   background: #E1DBD0;
-  div {
+  padding-bottom: 20px;
+  /* div {
     max-width: ${GRID.CONTAINER};
     margin: auto;
-  }
+  } */
 `
 
 const HomeLinkInnerContent = styled.div`
@@ -180,20 +185,22 @@ export const HomeSubTittle = ({title}) => (
   </HomeSubTittleStyled>
 )
 
-export const HomePlace = ({title, children}) => (
-  <HomePlaceStyle>
-    <h2>{title}</h2>
-    {children}
+export const HomePlace = ({title, children, url}) => (
+  <HomePlaceStyle href={url}>
+    <HomePlaceItemTitle>{title}</HomePlaceItemTitle>
+    <HomePlaceListItems>
+      {children}
+    </HomePlaceListItems>
   </HomePlaceStyle>
 )
 
-export const HomePlaceItem = ({items}) => (
+export const HomePlaceItems = ({items}) => (
   items.map((item, index) => {
     return (
-      <div key={index}>
-        <strong>{item.type}</strong>
+      <HomePlaceItem key={index}>
+        <p>{item.type}</p>
         <span>{item.value}</span>
-      </div>
+      </HomePlaceItem>
     )
   })
 )
