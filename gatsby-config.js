@@ -65,14 +65,6 @@ module.exports = {
         path: `${__dirname}/src/data/`
       }
     },
-    `gatsby-plugin-remote-images`,
-    {
-      resolve: `gatsby-plugin-remote-images`,
-      options: {
-        nodeType: 'myNodes',
-        imagePath: 'path.to.image'
-      }
-    },
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {

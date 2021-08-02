@@ -4,11 +4,13 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import {
   HomeItem,
-  HomeContent,
-  HomeColumn,
   HomeSubTittle
 } from "@components/home";
 import shipping from "./../images/envios.jpg"
+import {
+  HomeContent,
+  HomeColumn
+} from "./../components/home/styled"
 
 const GalleryPage = () => (
   <Layout>
@@ -24,7 +26,6 @@ const GalleryPage = () => (
           description={"Hacemos envíos a todo el Perú"}
           width={"33.3%"}
         />
-
         <HomeItem
           title={"Hacemos envíos a todo el Perú"}
           paragraph={"MOVILBUS, MARVISUR"}

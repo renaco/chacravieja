@@ -5,7 +5,7 @@ import DownloadFile from "./../components/download"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { HomeImage, ContentImage } from "./../components/home"
+import { HomeImage, ContentImage } from "./../components/home/styled"
 
 const CatalogPage = () => (
   <Layout>

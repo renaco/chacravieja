@@ -42,8 +42,8 @@ const IconMiddle = styled.img`
 `;
 
 export const ItemSeparator = styled.span`
-  border-right: 2px dotted #9D7C29;
-  height: 100%;
+  border-right: 1px dotted #9D7C29;
+  height: 90%;
 `;
 
 export const ItemMiddle = ({icon, description, title, subtitle, link }) => (

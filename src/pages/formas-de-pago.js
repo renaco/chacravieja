@@ -4,13 +4,15 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import {
   HomeItem,
-  HomeContent,
-  HomeColumn,
   HomeSubTittle
 } from "@components/home";
 import pagos from "./../images/pagos.jpg"
 import BCP from "@images/folder/bcp.svg"
 import BBVA from "@images/folder/bbva.svg"
+import {
+  HomeContent,
+  HomeColumn
+} from "./../components/home/styled"
 
 const GalleryPage = () => (
   <Layout>

@@ -9,26 +9,29 @@ import Card from "@images/icons/card.svg"
 import Box from "@images/icons/box.svg"
 import Typography from "@images/typography.svg"
 import Bodegon from "@images/bodegon.jpg"
-// import Map from "@images/icons/map.svg"
-// import embarcadero from "@images/home/embarcadero.png"
-// import mirador from "@images/home/mirador-tahuishco.png"
-// import oromina from "@images/home/oromina.png"
-// import tingana from "@images/home/tingana.png"
+import embarcadero from "@images/home/embarcadero.png"
+import mirador from "@images/home/mirador-tahuishco.png"
+import oromina from "@images/home/oromina.png"
+import tingana from "@images/home/tingana.png"
 
 import {
   HomeItem,
-  HomeContent,
-  HomeColumn,
-  HomeContactContent,
-  HomeSlide,
-  HomeSlideParagraph as HomeSlideParagraph,
-  HomeSlideButton,
-  HomeGridSlider,
+  HomeItemBullet,
   HomeSubTittle,
   HomePlace,
   HomePlaceItems
 } from "@components/home";
 import { ItemMiddle, ItemSeparator } from "@components/middle";
+
+import {
+  HomeSlide,
+  HomeSlideParagraph,
+  HomeContactContent,
+  HomeSlideButton,
+  HomeContent,
+  HomeGridSlider,
+  HomeColumn,
+} from "./../components/home/styled"
 
 const IndexPage = () => {
 
@@ -36,8 +39,8 @@ const IndexPage = () => {
     console.log('this', e);
   }
 
-  const items = [
-    { type: 'Región:', value: 'Región San Martín' },
+  const location = [
+    { type: 'Región:', value: 'San Martín' },
     { type: 'Latitud:', value: -6.03473 },
     { type: 'Longitud:', value: -76.9747 },
     { type: 'Altitud:', value: '860 msnm' }
@@ -71,7 +74,7 @@ const IndexPage = () => {
         </HomeSlide>
       </HomeColumn>
 
-      <HomeContent>
+      <HomeContent background={'#E5E5E5'}>
         <HomeColumn>
           <HomeSubTittle title={'VIVE NUESTRA EXPERIENCIA'} />
         </HomeColumn>
@@ -86,6 +89,7 @@ const IndexPage = () => {
             }
             label={"Leer más"}
             width={"33.3%"}
+            style={{boxShadow: '0 4px 5px rgba(0, 0, 0, 0.12)'}}
           />
 
           <HomeItem
@@ -97,6 +101,7 @@ const IndexPage = () => {
               "Licor de Chuchuhuasi, Chuchuwasi o Chuchuwasha, macerado de la corteza del árbol amazónico de Chuchuhuasi en aguardiente de caña, su aroma y sabor amaderado delatan su origen de selva alta, entre algunas de sus propiedades"
             }
             label={"Leer más >"}
+            style={{boxShadow: '0 4px 5px rgba(0, 0, 0, 0.12)'}}
             width={"66.6%"}
           />
         </HomeColumn>
@@ -112,6 +117,7 @@ const IndexPage = () => {
             }
             label={"Leer más >"}
             width={"66.6%"}
+            style={{boxShadow: '0 4px 5px rgba(0, 0, 0, 0.12)'}}
           />
 
           <HomeItem
@@ -124,67 +130,80 @@ const IndexPage = () => {
             }
             label={"Leer más >"}
             width={"33.3%"}
+            style={{boxShadow: '0 4px 5px rgba(0, 0, 0, 0.12)'}}
           />
         </HomeColumn>
 
-        <HomeContactContent>
-          <ItemMiddle
-            link={'/formas-de-pago'}
-            icon={Card}
-            description={"Tarjeta"}
-            title={"FORMAS DE PAGO"}
-            subtitle={"Aceptamos todas las tarjetas"}
-          />
-          <ItemSeparator />
-          <ItemMiddle
-            link={'/envios'}
-            icon={Box}
-            description={"Envíos"}
-            title={"FORMAS DE ENVÍO"}
-            subtitle={"Atendemos a nivel nacional"}
-          />
-        </HomeContactContent>
+        <HomeColumn>
+          <HomeContactContent>
+            <ItemMiddle
+              link={'/formas-de-pago'}
+              icon={Card}
+              description={"Tarjeta"}
+              title={"FORMAS DE PAGO"}
+              subtitle={"Aceptamos todas las tarjetas"}
+              />
+            <ItemSeparator />
+            <ItemMiddle
+              link={'/envios'}
+              icon={Box}
+              description={"Envíos"}
+              title={"FORMAS DE ENVÍO"}
+              subtitle={"Atendemos a nivel nacional"}
+              />
+          </HomeContactContent>
+        </HomeColumn>
       </HomeContent>
-      {/* <HomeContent>
+
+      <HomeContent background={'#ffffff'}>
         <HomeColumn>
-          <HomeSubTittle title={'SITIOS ESTRATÉGICOS'} />
+          <HomeSubTittle title={'SOCIOS ESTRATÉGICOS'} />
+        </HomeColumn>
+      </HomeContent>
+
+      <HomeContent background={'#E1DBD0'}>
+        <HomeColumn>
+          <HomeSubTittle title={'DISFRUTA DEL ALTOMAYO'} />
         </HomeColumn>
         <HomeColumn>
-          <HomeItem
+          <HomeItemBullet
+            link={'/turismo-y-mas#embardadero-de-tahuishco'}
             image={embarcadero}
-            paragraph={
-              "Embarcadero de Tahuishco Av. Los Huambrillos 333 Celular 987229222"
-            }
+            title={'Embarcadero de Tahuishco'}
+            background={"transparent"}
+            textAlign={'center'}
             width={"33.3%"}
           />
-          <HomeItem
+          <HomeItemBullet
+            link={'/turismo-y-mas#banos-sulfurosos-oromina'}
             image={mirador}
-            paragraph={
-              "Baños de Oromina Av. Los Huambrillos 333 Celular 987229222"
-            }
+            title={'Baños de Oromina'}
+            background={"transparent"}
+            textAlign={'center'}
             width={"33.3%"}
           />
-          <HomeItem
+          <HomeItemBullet
+            link={'/turismo-y-mas#banos-termales-san-mateo'}
             image={oromina}
-            paragraph={
-              "Mirador de Tahuishco Av. Los Huambrillos 333 Celular 987229222 "
-            }
+            title={'Mirador de Tahuishco'}
+            background={"transparent"}
+            textAlign={'center'}
             width={"33.3%"}
           />
-          <HomeItem
+          <HomeItemBullet
+            link={'/turismo-y-mas#la-tingana'}
+            title={'La Tingana'}
             image={tingana}
-            paragraph={
-              "La Tingana Av. Los Huambrillos 333 Celular 987229222"
-            }
+            background={"transparent"}
+            textAlign={'center'}
             width={"33.3%"}
           />
         </HomeColumn>
-      </HomeContent> */}
+      </HomeContent>
       <HomeContent>
         <HomeColumn>
-          {/* <img src={Map} alt="Moyobamba" width="17px" /> */}
           <HomePlace title={'Moyobamba'} url="https://www.google.com/maps?q=moyobamba&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjN7sGbybTxAhUUIbkGHTsIBXMQ_AUoAnoECAEQBQ" target="_blank">
-            <HomePlaceItems items={items} />
+            <HomePlaceItems items={location} />
           </HomePlace>
         </HomeColumn>
       </HomeContent>

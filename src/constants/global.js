@@ -3,6 +3,7 @@ export const CONFIG = {
 }
 
 export const COLORS = {
+  WHITE: '#ffffff',
   PRIMARY: '#A58C57',
   BLACK_SECONDARY: '#060606'
 }
