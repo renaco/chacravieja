@@ -155,15 +155,10 @@ const IndexPage = () => {
         </HomeColumn>
       </HomeContent>
 
-      <HomeContent background={'#ffffff'}>
-        <HomeColumn>
-          <HomeSubTittle title={'SOCIOS ESTRATÉGICOS'} />
-        </HomeColumn>
-      </HomeContent>
 
       <HomeContent background={'#E1DBD0'}>
         <HomeColumn>
-          <HomeSubTittle title={'DISFRUTA DEL ALTOMAYO'} />
+          <HomeSubTittle title={'SOCIOS ESTRATÉGICOS'} />
         </HomeColumn>
         <HomeColumn>
           <HomeItemBullet
