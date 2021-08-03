@@ -31,7 +31,7 @@ const SubTittleMiddle = styled.div`
   font-style: normal;
   font-weight: 500;
   font-size: 30px;
-  line-height: 34px;
+  line-height: 0.9em;
   color: #C6C6C6;
 `;
 

@@ -13,6 +13,7 @@ import embarcadero from "@images/home/embarcadero.png"
 import mirador from "@images/home/mirador-tahuishco.png"
 import oromina from "@images/home/oromina.png"
 import tingana from "@images/home/tingana.png"
+import { SliderComponent } from "./../components/slider"
 
 import {
   HomeItem,
@@ -155,6 +156,14 @@ const IndexPage = () => {
         </HomeColumn>
       </HomeContent>
 
+      <HomeContent background={'#ffffff'}>
+        <HomeColumn>
+          <HomeSubTittle title={'SOCIOS COMERCIALES'} />
+        </HomeColumn>
+        <SliderComponent></SliderComponent>
+        {/* <HomeColumn>
+        </HomeColumn> */}
+      </HomeContent>
 
       <HomeContent background={'#E1DBD0'}>
         <HomeColumn>
