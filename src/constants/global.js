@@ -17,6 +17,8 @@ export const WHATSAPP = {
   CONTACT: `https://api.whatsapp.com/send?phone=51942428028&text=Hola ChacraVieja deseo contactarme con ustedes`
 }
 
+export const MAP = 'https://www.google.com/maps?q=moyobamba&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjN7sGbybTxAhUUIbkGHTsIBXMQ_AUoAnoECAEQBQ'
+
 export const SIZES = {
   mobile: '40em',
   tablet: '1024px',
@@ -28,3 +30,10 @@ export const DEVICE = {
   tablet: `(max-width : ${SIZES.tablet})`,
   laptop: `(max-width : ${SIZES.laptop})`
 }
+
+export const LOCATION = [
+  { type: 'Región:', value: 'San Martín' },
+  { type: 'Latitud:', value: -6.03473 },
+  { type: 'Longitud:', value: -76.9747 },
+  { type: 'Altitud:', value: '860 msnm' }
+]

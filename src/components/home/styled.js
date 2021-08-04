@@ -27,6 +27,7 @@ export const HomePlaceTitleRowGroup = styled.div`
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  align-items: center;
   @media (min-width: ${SIZES.tablet}) {
     flex-direction: row;
   }
@@ -34,7 +35,11 @@ export const HomePlaceTitleRowGroup = styled.div`
 
 export const HomePlaceTitleRow = styled.div`
   display: flex;
+  align-items: flex-start;
   flex-direction: row;
+  @media (min-width: ${SIZES.tablet}) {
+    align-items: center;
+  }
 `
 
 export const HomePlaceImage = styled.img`
@@ -42,6 +47,9 @@ export const HomePlaceImage = styled.img`
   height: 28px;
   margin-right: 10px;
   margin-top: -1px;
+  @media (min-width: ${SIZES.tablet}) {
+    margin-top: -5px;
+  }
 `
 
 export const HomeItemTitle = styled.h5`
@@ -103,22 +111,17 @@ export const HomeSlideButton = styled.a`
   background-color: #D63500;
   color: #ffffff;
   justify-content: center;
-  display: inline-flex;
+  display: flex;
   padding: 10px 15px;
   font-weight: 600;
-  margin: 0 20px 50px;
+  margin: 0 auto;
   font-size: 24px;
   width: auto;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   text-decoration: none;
-  i {
-    background-image: url("data:image/svg+xml,%3Csvg width='19' height='23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M7.431 0h11.061l-.002 17.155h-5.684v-2.342h2.644V13.5h-2.644v-1.33h2.644v-1.314h-2.642v-5.89L7.431 0zM6.404 4.597V.836l4.072 3.761H6.404zM0 22.381V5.909h11.5v16.472H0zM7.373 8.27a2.8 2.8 0 10-3.112 4.656A2.8 2.8 0 007.373 8.27zM3.359 19.026v1.31h4.916v-1.31H3.359zm0-2.649v1.313h4.916v-1.313H3.359zm2.458-4.3a1.483 1.483 0 100-2.967 1.483 1.483 0 000 2.967z' fill='%23fff'/%3E%3C/svg%3E");
-    margin-left: 10px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    display: block;
-    width: 19px;
-    height: 23px;
+  height: 50px;
+  @media (min-width: ${SIZES.mobile}) {
+    display: inline-flex;
   }
 `
 
@@ -245,7 +248,7 @@ export const HomePlaceItemsStyled = styled.div`
 export const HomePlaceListItems = styled.div`
   display: grid;
   grid-template-columns: none;
-  width: 90%;
+  width: 80%;
   @media (min-width: ${SIZES.tablet}) {
     grid-template-columns: 2fr 3fr;
   }

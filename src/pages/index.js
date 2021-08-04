@@ -14,6 +14,7 @@ import mirador from "@images/home/mirador-tahuishco.png"
 import oromina from "@images/home/oromina.png"
 import tingana from "@images/home/tingana.png"
 import { SliderComponent } from "./../components/slider"
+import { MAP, LOCATION } from "../constants/global.js"
 
 import {
   HomeItem,
@@ -40,13 +41,6 @@ const IndexPage = () => {
     console.log('this', e);
   }
 
-  const location = [
-    { type: 'Región:', value: 'San Martín' },
-    { type: 'Latitud:', value: -6.03473 },
-    { type: 'Longitud:', value: -76.9747 },
-    { type: 'Altitud:', value: '860 msnm' }
-  ]
-
   return (
     <Layout>
       <SEO title="Home" />
@@ -54,7 +48,7 @@ const IndexPage = () => {
         <HomeSlide>
           <HomeGridSlider>
             <img src={Bodegon} alt="Bodegon" />
-            <div>
+            <div className="home__content-slider">
               <img src={Typography} alt="Moyobamba San Martin" />
               <HomeSlideParagraph>
                 Nuestros productos Chacra Vieja a base de frutas oriundas de la
@@ -68,7 +62,7 @@ const IndexPage = () => {
                 data-test="download-catalog"
               >
                 <span>descargar catálogo</span>
-                <i></i>
+                <i className="icon icon-download"></i>
               </HomeSlideButton>
             </div>
           </HomeGridSlider>
@@ -161,8 +155,6 @@ const IndexPage = () => {
           <HomeSubTittle title={'SOCIOS COMERCIALES'} />
         </HomeColumn>
         <SliderComponent></SliderComponent>
-        {/* <HomeColumn>
-        </HomeColumn> */}
       </HomeContent>
 
       <HomeContent background={'#E1DBD0'}>
@@ -206,8 +198,16 @@ const IndexPage = () => {
       </HomeContent>
       <HomeContent>
         <HomeColumn>
-          <HomePlace title={'Moyobamba'} url="https://www.google.com/maps?q=moyobamba&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjN7sGbybTxAhUUIbkGHTsIBXMQ_AUoAnoECAEQBQ" target="_blank">
-            <HomePlaceItems items={location} />
+          <HomePlace title={'Moyobamba'}
+            url={MAP}
+            target="_blank">
+            <HomePlaceItems items={LOCATION} />
+            <HomeSlideButton
+                data-test="link-map"
+              >
+                <span>ver mapa</span>
+                <i className="icon icon-map"></i>
+              </HomeSlideButton>
           </HomePlace>
         </HomeColumn>
       </HomeContent>

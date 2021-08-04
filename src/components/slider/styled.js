@@ -44,7 +44,7 @@ export const SliderContent = styled.div`
 export const SliderContentLogo = styled.div`
   display: flex;
   grid-template-columns: 1fr 4fr;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 `
 
