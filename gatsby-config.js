@@ -91,6 +91,13 @@ module.exports = {
           "@images": "src/images"
         }
       }
+    },
+    {
+      resolve: `gatsby-plugin-mailchimp`,
+      options: {
+        endpoint: 'https://gmail.us5.list-manage.com/subscribe/post?u=dd7c2313e18302830cf9609e5&amp;id=cab9e6351a',
+        timeout: 3500
+      }
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

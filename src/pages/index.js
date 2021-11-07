@@ -14,7 +14,7 @@ import mirador from "@images/home/mirador-tahuishco.png"
 import oromina from "@images/home/oromina.png"
 import tingana from "@images/home/tingana.png"
 import { SliderComponent } from "./../components/slider"
-import { MAP, LOCATION } from "../constants/global.js"
+import { MAP, LOCATION, CATALOG } from "../constants/global.js"
 
 import {
   HomeItem,
@@ -57,7 +57,7 @@ const IndexPage = () => {
               </HomeSlideParagraph>
               <HomeSlideButton
                 onClick={downloadCatalog}
-                href="https://archivos.chacravieja.com/catalogo.pdf"
+                href={CATALOG}
                 target="_blank"
                 data-test="download-catalog"
               >

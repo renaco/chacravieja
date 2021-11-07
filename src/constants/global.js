@@ -19,6 +19,10 @@ export const WHATSAPP = {
 
 export const MAP = 'https://www.google.com/maps?q=moyobamba&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjN7sGbybTxAhUUIbkGHTsIBXMQ_AUoAnoECAEQBQ'
 
+export const CATALOG = 'https://archivos.chacravieja.com/catalogo.pdf';
+
+export const URL_CONTACT = 'https://formsubmit.co/demo@romeroruiz.com';
+
 export const SIZES = {
   mobile: '40em',
   tablet: '1024px',

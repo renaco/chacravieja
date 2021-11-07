@@ -108,6 +108,7 @@ export const HomeSlideParagraph = styled.p`
 `
 
 export const HomeSlideButton = styled.a`
+  cursor: pointer;
   background-color: #D63500;
   color: #ffffff;
   justify-content: center;

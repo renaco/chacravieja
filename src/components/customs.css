@@ -44,3 +44,16 @@ p, label, button {
 .home__content-slider {
   display: grid;
 }
+
+.contact__input {
+  border: none;
+  margin-bottom: 20px;
+  width: 100%;
+  border-bottom: 2px solid #A58C57;
+  color: white;
+  background-color: transparent;
+}
+
+.contact__input:focus {
+  outline: none;
+}

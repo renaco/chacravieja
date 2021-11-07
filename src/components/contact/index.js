@@ -1,13 +1,5 @@
 import React from "react"
-import styled from "styled-components"
-import { CONFIG } from "./../../constants/global"
-
-const SubTitleContact = styled.span`
-  color: ${CONFIG.golden};
-`
-const TitleContacts = styled.p`
-  display: flex;
-`
+import { SubTitleContact, TitleContacts } from "./styled"
 
 const ContactComponent = () => (
   <TitleContacts>

@@ -1,14 +1,26 @@
 import React from "react"
-// import { Link } from "gatsby"
-// import styled from "styled-components"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import {
+  HomeContent,
+  HomeColumn,
+} from "./../components/home/styled"
+
+import {
+  HomeSubTittle
+} from "@components/home";
+
 const ThanksPage = () => (
   <Layout>
     <SEO title="Contacto" />
-    <h1>Gracias por contactarse con nosotros, estaremos respondiendo lo más antes posible</h1>
+    <HomeContent background={'#E5E5E5'}>
+      <HomeColumn>
+        <HomeSubTittle title={'Gracias por contactarse con nosotros, estaremos respondiendo lo más antes posible'} />
+        {/* <h1>Gracias por contactarse con nosotros, estaremos respondiendo lo más antes posible</h1> */}
+      </HomeColumn>
+    </HomeContent>
   </Layout>
 )
 
