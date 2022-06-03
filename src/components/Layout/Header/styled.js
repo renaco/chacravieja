@@ -4,7 +4,6 @@ import { COLORS, GRID } from "../../../constants/global.js"
 export const HeaderBrowser = styled.header`
   display: block;
   margin: auto;
-  /* background: ${COLORS.BLACK_SECONDARY}; */
   max-width: ${GRID.CONTAINER};
 
   img {

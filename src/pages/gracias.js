@@ -18,7 +18,6 @@ const ThanksPage = () => (
     <HomeContent background={'#E5E5E5'}>
       <HomeColumn>
         <HomeSubTittle title={'Gracias por contactarse con nosotros, estaremos respondiendo lo más antes posible'} />
-        {/* <h1>Gracias por contactarse con nosotros, estaremos respondiendo lo más antes posible</h1> */}
       </HomeColumn>
     </HomeContent>
   </Layout>

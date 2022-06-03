@@ -13,7 +13,7 @@ import styled from "styled-components"
 import "./layout.css"
 import "./customs.css"
 
-import { GRID, COLORS, SIZES } from "./../constants/global"
+import { COLORS, SIZES } from "./../constants/global"
 import ShareWhatsapp from "./../components/whatsapp"
 import Header from "./../components/Layout/Header"
 import fullBackground from "./../images/background.png"
@@ -42,7 +42,6 @@ const BodyApp = styled.div`
 const Container = styled.div`
   background: rgba(0, 0, 0, 0.75);
   margin: 0 auto;
-  /* max-width: ${GRID.CONTAINER}; */
   padding-top: 0;
   padding: 0;
 `

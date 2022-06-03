@@ -10,7 +10,6 @@ const ContentMiddle = styled(Link)`
   flex-basis: 100%;
   justify-content: center;
   padding: 20px;
-  /* margin-bottom: 120px; */
 `;
 
 const ContentMiddleHeader = styled.header`

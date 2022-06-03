@@ -94,6 +94,7 @@ export class ResponsiveMenuComponent extends PureComponent {
   render() {
     return (
       <ResponsiveMenu>
+        {/* TODO: main menu */}
         {/* <MenuLinks mobile={false} /> */}
         <a href="https://www.youtube.com/channel/UCaTwEocbP1xONnioStBofGw/">
           <FaYoutube />
