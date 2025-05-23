@@ -82,5 +82,8 @@
     "build-storybook": "build-storybook -c .storybook -o storybook",
     "cy:open": "yarn cypress open",
     "cy:test": "yarn cypress test"
+  },
+  "engines": {
+    "node": "20.12.2"
   }
 }
